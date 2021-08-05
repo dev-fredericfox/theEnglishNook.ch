@@ -1,0 +1,24 @@
+---
+console.log("works!")
+const {lang} = Astro.props
+const langs = {
+    en : [{link: "Home", route: "/"}, {link: "Lessons", route: "/english-lessons"}, {link: "About", route: "/about"}],
+    de : [{link: "Startseite", route: "/de/"}, {link: "Kurse", route: "/de/englisch-kurse"}, {link: "Über mich", route: "/de/ueber-mich"}],
+    fr : [{link: "Accueil", route: "/fr/"}, {link: "Leçons", route: "/fr/lecons-d-anglais"}, {link: "Qui suis-je?", route: "/fr/qui-suis-je"}]
+    }
+
+let selected = langs[lang]
+
+---
+<aside class="menu">
+  <ul class="menu-list is-hidden-mobile">
+  {selected.map(el => (
+    <li><a href={el.route}>{el.link}</a></li>
+))} 
+  </ul>
+   <ul class="menu-list is-hidden-tablet has-text-centered">
+  {selected.map(el => (
+    <li><a href={el.route}>{el.link}</a></li>
+))} 
+  </ul>
+</aside>

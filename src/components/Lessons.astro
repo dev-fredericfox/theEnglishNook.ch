@@ -1,0 +1,51 @@
+---
+const {lang} = Astro.props
+const translatedContent = {
+    en : {
+            title   : '2021-2022 Academic Year - Course Offerings', 
+            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
+            lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
+                        {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
+                        {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
+                        {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+            btnRoute: "/"},
+    de : {
+            title   : "2021-2022 Academic Year - Course Offerings", 
+            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
+            lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
+                        {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
+                        {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
+                        {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+            button  : "About", 
+            btnRoute: "/"},
+    fr : {
+            title   : "2021-2022 Academic Year - Course Offerings", 
+            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
+            lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
+                        {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
+                        {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
+                        {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
+                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+            button  : "About", 
+            btnRoute: "/"},
+    }
+
+
+let currentLanguage = translatedContent[lang]
+
+---
+<div class="content">
+<h2>{currentLanguage.title}</h2>
+<p>{currentLanguage.body}</p>
+{currentLanguage.lessons.map(el => (
+    <div><p>{el.lessonName}</p> - <p>{el.lessonPrice}</p></div>
+))}
+</div>

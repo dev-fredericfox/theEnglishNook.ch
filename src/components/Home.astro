@@ -1,0 +1,30 @@
+---
+const {lang} = Astro.props
+const translatedContent = {
+    en : {
+            title: 'Online English Lessons', 
+            text: ["Private, semi-private and small-group English instruction from beginner (A1) to advanced (C2) for all ages", "Personalised, individual support tailored to your particular needs","Exam support every step of the way","Customisable lessons built exclusively around your interests (e.g. English literature & STEM)","All from the convenience of your preferred location with the support of a CELTA-qualified Teacher"],
+            button: "Call to Action", 
+            btnRoute: "/"},
+    de : {
+            title: "Englisch Unterricht in der Schweiz", 
+            text: ["Private, semi-private and small-group English instruction from beginner (A1) to advanced (C2) for all ages", "Personalised, individual support tailored to your particular needs","Exam support every step of the way","Customisable lessons built exclusively around your interests (e.g. English literature & STEM)","All from the convenience of your preferred location with the support of a CELTA-qualified Teacher"],
+            button: "About", 
+            btnRoute: "/"},
+    fr : {
+            title: "Leçons d'anglais en Suisse", 
+            text: ["Private, semi-private and small-group English instruction from beginner (A1) to advanced (C2) for all ages", "Personalised, individual support tailored to your particular needs","Exam support every step of the way","Customisable lessons built exclusively around your interests (e.g. English literature & STEM)","All from the convenience of your preferred location with the support of a CELTA-qualified Teacher"],
+            button: "About", 
+            btnRoute: "/"},
+    }
+
+
+let currentLanguage = translatedContent[lang]
+---
+<div class="content">
+<h2>{currentLanguage.title}</h2>
+<ul>{currentLanguage.text.map(el => (
+    <li>{el}</li>
+))}
+</ul>
+</div>

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'EB Garamond', serif;
 }
 
 :root {
@@ -11,13 +14,24 @@
 }
 
 body {
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   width: 100%;
   min-height: 100vh;
-  display: grid;
-  justify-content: center;
-  background: #f9fafb;
-  color: #111827;
+  background: #FFFFC2;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.brand-red {
+  color: #C04000
+}
+
+.brand-yellow {
+ color: #C7A317
+}
+
+.dropdown-menu {
+  min-width: 0px;
 }
 
 @media (prefers-color-scheme: dark) {
