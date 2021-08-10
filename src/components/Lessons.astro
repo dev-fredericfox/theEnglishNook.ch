@@ -2,38 +2,41 @@
 const {lang} = Astro.props
 const translatedContent = {
     en : {
-            title   : '2021-2022 Academic Year - Course Offerings', 
-            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
+            title   : "2021-2022 Academic Year - Course Offerings", 
+            body    : ["Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by the learning styles and specific needs of my students but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.", 
+                       "(The following fees are for 1 hour of private language instruction. For semi-private lessons and small groups, please contact me <a href='/contact'>here</a> or at <span class='brand-red'>info@theenglishnook.ch</span>.)"],
             lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
                         {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
                         {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
                         {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
                         {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
                         {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
-                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+                        {lessonName: "Customisable Lessons", lessonPrice: undefined, lessonDetails: ["Cannot find what you are looking for?","Do not hesitate to contact me with your ideas!","I would be more than happy to design a course based on your interests."]}], 
             btnRoute: "/"},
     de : {
-            title   : "2021-2022 Academic Year - Course Offerings", 
-            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
-            lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
-                        {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
-                        {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
-                        {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
-                        {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
-                        {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
-                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+            title   : "Akademisches Jahr 2021-2022 - Kursangebot", 
+            body    : ["Unabhängig vom jeweiligen Kurs glaube ich an einen schülerzentrierten, ganzheitlichen Ansatz für alle Aspekte des Sprachenlernens. Da ich selbst Studentin zweier Fremdsprachen bin und die damit verbundenen, manchmal einschüchternden Herausforderungen erlebt habe, lege ich großen Wert auf Einzelunterricht, der sich nicht nur von den Lernstilen und spezifischen Bedürfnissen meiner Studenten/-innen, sondern auch von einer adaptiven, auf Flexibilität, Zusammenarbeit und Personalisierung ausgerichteten Methodik leiten lässt. Für weitere Informationen zögern Sie bitte nicht, Kontakt aufzunehmen. Ich würde mich freuen, Ihre Bedürfnisse zu besprechen und einen Weg zu finden, Ihren Unterricht so bereichernd und nützlich wie möglich zu machen.",
+                       "(Die folgenden Preise gelten für 1 Stunde privaten Sprachunterricht. Für Halbprivatunterricht und kleine Gruppen kontaktieren Sie mich bitte <a href='/de/kontakt'>hier</a> oder unter <span class='brand-red'>info@theenglishnook.ch</span>.)"],
+            lessons : [ {lessonName: "Englisch für allgemeine Zwecke (A1-C2)", lessonPrice: "CHF 45"},
+                        {lessonName: "Englisch für berufliche Zwecke (Medizin, Finanzwesen, Recht, Betriebswirtschaft oder Marketing)", lessonPrice: "CHF 55"},
+                        {lessonName: "Cambridge-Prüfungsunterstützung (YLE, KET, PET, FCE, CAE und CPE)", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL-Prüfungsunterstützung", lessonPrice: "CHF 50"},
+                        {lessonName: "TOEFL-Young-Learners-Prüfungsunterstützung (Primary und Junior)", lessonPrice: "CHF 50"},
+                        {lessonName: "IELTS-Prüfungsunterstützung", lessonPrice: "CHF 50"},
+                        {lessonName: "Individuell gestaltbarer Unterricht", lessonPrice: undefined, lessonDetails: ["Haben Sie nicht gefunden, was Sie suchen?","Zögern Sie nicht, mich mit Ihren Ideen zu kontaktieren!","Ich würde mich sehr freuen, einen Kurs nach Ihren Interessen zu gestalten."]}], 
             button  : "About", 
             btnRoute: "/"},
     fr : {
-            title   : "2021-2022 Academic Year - Course Offerings", 
-            body    : "Regardless of the course in question, I believe in a student-centred, holistic approach to all aspects of language learning. Being myself a student of two foreign tongues and having experienced the at times daunting challenges involved, I place great importance on one-to-one instruction guided not only by your learning styles and specific needs but also by an adaptive methodology focused on flexibility, collaboration and personalisation. For further information, please do not hesitate to get in touch. I would love to discuss your needs and find a way of making your lessons as rich and beneficial as possible.",
-            lessons : [ {lessonName: "English for General Purposes (A1-C2)", lessonPrice: "CHF 45"},
-                        {lessonName: "English for Professional Purposes (Medicine, Finance, Law, Business Management or Marketing)", lessonPrice: "CHF 55"},
-                        {lessonName: "Cambridge Exam Support (YLE, KET, PET, FCE, CAE and CPE)", lessonPrice: "CHF 50"},
-                        {lessonName: "TOEFL Exam Support", lessonPrice: "CHF 50"},
-                        {lessonName: "TOEFL Young Learners Exam Support (Primary & Junior)", lessonPrice: "CHF 50"},
-                        {lessonName: "IELTS Exam Support", lessonPrice: "CHF 50"},
-                        {lessonName: "Customisable Lessons", lessonPrice: "<p>Cannot find what you are looking for? </p><p>Do not hesitate to contact me with your ideas! </p><p>I would be more than happy to design a course based on your interests.</p>"}], 
+            title   : "Année scolaire 2021-2022 - Offres de cours", 
+            body    : ["Quel que soit le cours en question, je crois en une approche holistique centrée sur l'étudiant de tous les aspects de l'apprentissage des langues. Etant moi-même étudiante de deux langues étrangères et ayant fait l'expérience des défis parfois décourageants que cela implique, j'accorde une grande importance à l'enseignement individuel guidé non seulement par les styles d'apprentissage et les besoins spécifiques de mes étudiant(e)s, mais aussi par une méthodologie adaptative axée sur la flexibilité, la collaboration et la personnalisation. Pour plus d'informations, n'hésitez pas à prendre contact. J'aimerais discuter de vos besoins et trouver un moyen de rendre vos cours aussi riches et bénéfiques que possible.",
+                       "(Les tarifs suivants correspondent à une heure de cours de langue privé. Pour les cours semi-privés et les petits groupes, veuillez me contacter <a href='/fr/contact'>ici</a> ou à <span class='brand-red'>info@theenglishnook.ch</span>.)"],
+            lessons : [ {lessonName: "Anglais général (A1-C2)", lessonPrice: "CHF 45"},
+                        {lessonName: "Anglais professionnel (médecine, finance, droit, gestion d'entreprise ou marketing)", lessonPrice: "CHF 55"},
+                        {lessonName: "Soutien aux examens de Cambridge (YLE, KET, PET, FCE, CAE et CPE)", lessonPrice: "CHF 50"},
+                        {lessonName: "Soutien à l'examen de TOEFL", lessonPrice: "CHF 50"},
+                        {lessonName: "Soutien à l'examen de TOEFL Young Learners (Primary et Junior)", lessonPrice: "CHF 50"},
+                        {lessonName: "Soutien à l'examen d'IELTS ", lessonPrice: "CHF 50"},
+                        {lessonName: "Leçons sur mesure", lessonPrice: undefined, lessonDetails: ["Vous ne trouvez pas ce que vous cherchez?","N'hésitez pas à me contacter avec vos idées!", "Je serais plus qu'heureuse de concevoir un cours basé sur vos intérêts."]}], 
             button  : "About", 
             btnRoute: "/"},
     }
@@ -43,9 +46,19 @@ let currentLanguage = translatedContent[lang]
 
 ---
 <div class="content">
-<h2>{currentLanguage.title}</h2>
-<p>{currentLanguage.body}</p>
+<h2 class="is-size-4 mb-5">{currentLanguage.title}</h2>
+<div>{currentLanguage.body.map(el => (
+        <p>{el}</p>
+))}</div>
+<div class="mt-5">
 {currentLanguage.lessons.map(el => (
-    <div><p>{el.lessonName}</p> - <p>{el.lessonPrice}</p></div>
+    <div>
+        <p class="mb-0"><strong>{el.lessonName}</strong></p>
+        <p class="mt-0 mb-0 mt-0">{el?.lessonDetails?.map(det => (
+                <p class="mb-0 mt-0">{det}</p>
+        ))}</p>
+        <p class="mt-0 mb-3 mt-0">{el?.lessonPrice}</p>
+    </div>
 ))}
+</div>
 </div>

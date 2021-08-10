@@ -1,0 +1,16 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Home from '../components/Home.astro';
+import NavBar from '../components/NavBar.astro';
+import SideBar from '../components/SideBar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<HomeLayout>
+<title slot="headerInfo">Welcome</title>
+    <NavBar slot="NavBar" lang="en" location="home"/>
+    <SideBar slot="SideBar" lang="en"/>        
+    <h1>404...</h1>
+    <Footer slot="Footer" lang="en"/>   
+
+</HomeLayout>

@@ -2,30 +2,38 @@
 const {lang,location} = Astro.props
 
 const languageDropdown = {
-    home    : {
-              en: {link:"EN", route: "/"}, 
-              de: {link:"DE", route:"/de/"}, 
-              fr: {link:"FR", route:"/fr/"}},
-    lessons : {
-              en: {link:"EN", route: "/english-lessons"}, 
-              de: {link:"DE", route:"/de/englisch-kurse"}, 
-              fr: {link:"FR", route:"/fr/lecons-d-anglais"}},
-    about   : {
-              en: {link:"EN", route: "/about"}, 
-              de: {link:"DE", route:"/de/ueber-mich"}, 
-              fr: {link:"FR", route:"/fr/qui-suis-je"}},
-    imprint : {
-              en: {link:"EN", route: "/imprint"}, 
-              de: {link:"DE", route:"/de/impressum"}, 
-              fr: {link:"FR", route:"/fr/mentions-legales"}},
-    tc      : {
-              en: {link:"EN", route: "/terms-and-conditions"}, 
-              de: {link:"DE", route:"/de/agb"}, 
-              fr: {link:"FR", route:"/fr/cgv"}},
-    privacy : {
-              en: {link:"EN", route: "/privacy-policy"}, 
-              de: {link:"DE", route:"/de/datenschutz"}, 
-              fr: {link:"FR", route:"/fr/protection-des-donnees"}}
+    home          : {
+                    en: {link:"EN", route: "/"}, 
+                    de: {link:"DE", route:"/de/"}, 
+                    fr: {link:"FR", route:"/fr/"}},
+    lessons       : {
+                    en: {link:"EN", route: "/english-lessons"}, 
+                    de: {link:"DE", route:"/de/englischkurse"}, 
+                    fr: {link:"FR", route:"/fr/lecons-d-anglais"}},
+    translation  : {
+                    en: {link:"EN", route: "/translation-and-proofreading"}, 
+                    de: {link:"DE", route:"/de/uebersetzung-korrekturlesen"}, 
+                    fr: {link:"FR", route:"/fr/traduction-et-relecture"}},
+    about         : {
+                    en: {link:"EN", route: "/about"}, 
+                    de: {link:"DE", route:"/de/ueber-mich"}, 
+                    fr: {link:"FR", route:"/fr/qui-suis-je"}},
+    contact       : {
+                    en: {link:"EN", route: "/contact"}, 
+                    de: {link:"DE", route:"/de/kontakt"}, 
+                    fr: {link:"FR", route:"/fr/contact"}},
+    imprint       : {
+                    en: {link:"EN", route: "/imprint"}, 
+                    de: {link:"DE", route:"/de/impressum"}, 
+                    fr: {link:"FR", route:"/fr/mentions-legales"}},
+    tc            : {
+                    en: {link:"EN", route: "/terms-and-conditions"}, 
+                    de: {link:"DE", route:"/de/agb"}, 
+                    fr: {link:"FR", route:"/fr/cgv"}},
+    privacy       : {
+                    en: {link:"EN", route: "/privacy-policy"}, 
+                    de: {link:"DE", route:"/de/datenschutz"}, 
+                    fr: {link:"FR", route:"/fr/protection-des-donnees"}}
     }
 
 
@@ -34,7 +42,7 @@ let allLang = languageDropdown[location]
 
 
 ---
-<div class="columns">
+<div class="langswitcher columns mb-5">
 <div class="column is-10"></div>
 <div class="column pt-5">
       {Object.keys(allLang).map((el,idx) => (
@@ -43,13 +51,14 @@ let allLang = languageDropdown[location]
 </div>
 
 </div>  
-<div class="columns">
-  <div class="column is-1">
+<div class="columns mt-3">
+  <!-- <div class="column is-1"></div> -->
+  <div class="column is-1 ml-6">
   <a class="" href="/">
       <img width="140" height="140" src="/assets/images/plh_logo_theEnglishNook.png" alt="The English Nook logo">
     </a>
   </div>
-  <div class="column is-5 mt-5">
+  <div class="column is-5 mt-1">
     <h1 class="brand-red is-size-2">The Engli<span class="brand-yellow">sh</span> Nook</h1>
     <p class="brand-red">/ˈɪŋɡl(ɪ)<span class="brand-yellow">ʃ</span>nʊk/</p>
   </div>

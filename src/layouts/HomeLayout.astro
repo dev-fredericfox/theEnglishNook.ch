@@ -1,5 +1,6 @@
 ---
 // Component Imports
+import Definition from '../components/Definition.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -16,16 +17,17 @@
 <body>
     <main>
         <slot name="NavBar" />
-            <div class="columns mt-6">
-                <div class="column is-1"></div>
-                <div class="column is-1">
+            <div class="columns mt-1 pl-5">
+                <!-- <div class="column is-1"></div> -->
+                <div class="column is-2 mt-0 ml-6">
                     <slot name="SideBar" />
                 </div>
-                <div class="column is-3"></div>
-                <div class="column is-6 ml-3">
+                <div class="column is-1"></div>
+                <div class="column is-5 ml-1 mt-2 has-text-centered">
                     <slot name="Main" />
             </div>
-              <div class="column is-1"></div>
+              <div class="column is-3"></div>
+        <!--<Definition/>-->
             </div>
             <slot name="Footer" />
 

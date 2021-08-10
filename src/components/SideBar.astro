@@ -2,9 +2,21 @@
 console.log("works!")
 const {lang} = Astro.props
 const langs = {
-    en : [{link: "Home", route: "/"}, {link: "Lessons", route: "/english-lessons"}, {link: "About", route: "/about"}],
-    de : [{link: "Startseite", route: "/de/"}, {link: "Kurse", route: "/de/englisch-kurse"}, {link: "Über mich", route: "/de/ueber-mich"}],
-    fr : [{link: "Accueil", route: "/fr/"}, {link: "Leçons", route: "/fr/lecons-d-anglais"}, {link: "Qui suis-je?", route: "/fr/qui-suis-je"}]
+    en : [{link: "Home", route: "/"}, 
+          {link: "English Lessons", route: "/english-lessons"},
+          {link: "Translation & Proofreading", route: "/translation-and-proofreading"}, 
+          {link: "About", route: "/about"},
+          {link: "Contact", route: "/contact"}],
+    de : [{link: "Startseite", route: "/de/"}, 
+          {link: "Englischkurse", route: "/de/englischkurse"},
+          {link: "Übersetzung & Korrekturlesen", route: "/de/uebersetzung-korrekturlesen"},  
+          {link: "Über mich", route: "/de/ueber-mich"},
+          {link: "Kontact", route: "/de/kontakt"}],
+    fr : [{link: "Accueil", route: "/fr/"}, 
+          {link: "Leçons d'anglais", route: "/fr/lecons-d-anglais"},
+          {link: "Traduction et relecture", route: "/fr/traduction-et-relecture"},  
+          {link: "Qui suis-je?", route: "/fr/qui-suis-je"},
+          {link: "Contactez-moi", route: "/fr/contact"},]
     }
 
 let selected = langs[lang]

@@ -1,6 +1,6 @@
 ---
 import HomeLayout from '../../layouts/HomeLayout.astro';
-import Home from '../../components/Home.astro';
+import Contact from '../../components/Contact.astro';
 import NavBar from '../../components/NavBar.astro';
 import SideBar from '../../components/SideBar.astro';
 import Footer from '../../components/Footer.astro';
@@ -8,8 +8,9 @@ import Footer from '../../components/Footer.astro';
 
 <HomeLayout>
 <title slot="headerInfo">Willkommen</title>
-    <NavBar slot="NavBar" lang="de" location="home"/>
+    <NavBar slot="NavBar" lang="de" location="contact"/>
     <SideBar slot="SideBar" lang="de"/>        
-    <Home slot="Main" lang="de"/>
+    <Contact slot="Main" lang="de"/>
     <Footer slot="Footer" lang="de"/>   
+
 </HomeLayout>

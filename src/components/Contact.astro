@@ -1,0 +1,30 @@
+---
+const {lang} = Astro.props
+const translatedContent = {
+    en : {
+            title       : 'Contact', 
+            body        : ["Would you like to know more about private English lessons or the translation/proofreading of a text?",
+                          "Send me an e-mail at <span class='brand-red'>info@theenglishnook.ch</span>, or use the contact form below, and I would be delighted to answer your questions.",]
+            },
+    de : {
+            title       : 'Kontakt', 
+            body        : ["Möchten Sie mehr über privaten Englischunterricht oder die Übersetzung/Korrekturlesen eines Textes erfahren?",
+                        " Schicken Sie mir eine E-Mail an <span class='brand-red'>info@theenglishnook.ch</span> oder verwenden Sie das untenstehende Kontaktformular, und ich würde mich sehr freuen, Ihre Fragen zu beantworten.",]
+            },
+    fr : {
+            title       : "Contactez-moi", 
+            body        : ["Souhaitez-vous en savoir plus sur les leçons privées d'anglais ou sur la traduction/relecture d'un texte ?",
+                          "Envoyez-moi un e-mail à <span class='brand-red'>info@theenglishnook.ch</span>, ou utilisez le formulaire de contact ci-dessous, et je serais ravie de répondre à vos questions."]
+            },
+    }
+
+
+let currentLanguage = translatedContent[lang]
+
+---
+<div class="content">
+<h2>{currentLanguage.title}</h2>
+{currentLanguage.body.map(el => (
+        <p>{el}</p>
+))}
+</div>
