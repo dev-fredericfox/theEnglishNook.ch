@@ -1,22 +1,22 @@
 ---
 console.log("works!")
-const {lang} = Astro.props
+const {lang, location} = Astro.props
 const langs = {
-    en : [{link: "Home", route: "/"}, 
-          {link: "English Lessons", route: "/english-lessons"},
-          {link: "Translation & Proofreading", route: "/translation-and-proofreading"}, 
-          {link: "About", route: "/about"},
-          {link: "Contact", route: "/contact"}],
-    de : [{link: "Startseite", route: "/de/"}, 
-          {link: "Englischkurse", route: "/de/englischkurse"},
-          {link: "Übersetzung & Korrekturlesen", route: "/de/uebersetzung-korrekturlesen"},  
-          {link: "Über mich", route: "/de/ueber-mich"},
-          {link: "Kontact", route: "/de/kontakt"}],
-    fr : [{link: "Accueil", route: "/fr/"}, 
-          {link: "Leçons d'anglais", route: "/fr/lecons-d-anglais"},
-          {link: "Traduction et relecture", route: "/fr/traduction-et-relecture"},  
-          {link: "Qui suis-je?", route: "/fr/qui-suis-je"},
-          {link: "Contactez-moi", route: "/fr/contact"},]
+    en : [{link: "Home", route: "/", name:"home"}, 
+          {link: "English Lessons", route: "/english-lessons", name:"lessons"},
+          {link: "Translation & Proofreading", route: "/translation-and-proofreading", name:"translation"}, 
+          {link: "About", route: "/about", name:"about"},
+          {link: "Contact", route: "/contact", name:"contact"}],
+    de : [{link: "Startseite", route: "/de/", name:"home"}, 
+          {link: "Englischkurse", route: "/de/englischkurse", name:"lessons"},
+          {link: "Übersetzung & Korrekturlesen", route: "/de/uebersetzung-korrekturlesen", name:"translation"},  
+          {link: "Über mich", route: "/de/ueber-mich", name:"about"},
+          {link: "Kontact", route: "/de/kontakt", name:"contact"}],
+    fr : [{link: "Accueil", route: "/fr/", name:"home"}, 
+          {link: "Leçons d'anglais", route: "/fr/lecons-d-anglais", name:"lessons"},
+          {link: "Traduction et relecture", route: "/fr/traduction-et-relecture", name:"translation"},  
+          {link: "Qui suis-je?", route: "/fr/qui-suis-je", name:"about"},
+          {link: "Contactez-moi", route: "/fr/contact", name:"contact"},]
     }
 
 let selected = langs[lang]
@@ -25,12 +25,12 @@ let selected = langs[lang]
 <aside class="menu">
   <ul class="menu-list is-hidden-mobile">
   {selected.map(el => (
-    <li><a href={el.route}>{el.link}</a></li>
+    el.name == location ? <li><a class="is-active" href={el.route}>{el.link}</a></li> : <li><a href={el.route}>{el.link}</a></li>
 ))} 
   </ul>
    <ul class="menu-list is-hidden-tablet has-text-centered">
   {selected.map(el => (
-    <li><a href={el.route}>{el.link}</a></li>
+    el.name == location ? <li><a class="is-active" href={el.route}>{el.link}</a></li> : <li><a href={el.route}>{el.link}</a></li>
 ))} 
   </ul>
 </aside>
