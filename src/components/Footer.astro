@@ -1,24 +1,13 @@
 ---
-const {lang} = Astro.props
-const langs = {
-    en : [{link: "Imprint", route: "/imprint"}, {link: "Terms & Conditions", route: "/terms-and-conditions"}, {link: "Privacy Policy", route: "/privacy-policy"}],
-    de : [{link: "Impressum", route: "/de/impressum"}, {link: "AGB", route: "/de/agb"}, {link: "Datenschutz", route: "/datenschutz"}],
-    fr : [{link: "Mentions légales", route: "/fr/mentions-legales"}, {link: "Conditions générales", route: "/fr/conditions-generales"}, {link: "Politique de confidentialité", route: "/politique-de-confidentialite"}]
-    }
+import router from '../data/router.json';
 
-let selected = ""
-if (lang == "de") {
-    selected = langs.de
-} else if (lang == "fr") {
-    selected = langs.fr
-} else {
-    selected = langs.en
-}
+const {lang, location} = Astro.props
 
+const navBar = Object.keys(router).filter(fil => fil == "imprint" || fil == "tc" || fil == "privacy")
 ---
+
 <div class="columns is-centered">
-    
-  {selected.map(el => (
-    <div class="column is-3 has-text-centered"><a href={el.route}>{el.link}</a></div>
+{navBar.map(el => (
+    <div class="column is-3 has-text-centered"> <a href={router[el][lang].route}>{router[el][lang].name}</a></div>
 ))}
 </div>
