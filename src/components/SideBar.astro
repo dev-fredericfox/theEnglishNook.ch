@@ -1,36 +1,19 @@
 ---
-console.log("works!")
+import router from '../data/router.json';
+
 const {lang, location} = Astro.props
-const langs = {
-    en : [{link: "Home", route: "/", name:"home"}, 
-          {link: "English Lessons", route: "/english-lessons", name:"lessons"},
-          {link: "Translation & Proofreading", route: "/translation-and-proofreading", name:"translation"}, 
-          {link: "About", route: "/about", name:"about"},
-          {link: "Contact", route: "/contact", name:"contact"}],
-    de : [{link: "Startseite", route: "/de/", name:"home"}, 
-          {link: "Englischkurse", route: "/de/englischkurse", name:"lessons"},
-          {link: "Übersetzung & Korrekturlesen", route: "/de/uebersetzung-korrekturlesen", name:"translation"},  
-          {link: "Über mich", route: "/de/ueber-mich", name:"about"},
-          {link: "Kontact", route: "/de/kontakt", name:"contact"}],
-    fr : [{link: "Accueil", route: "/fr/", name:"home"}, 
-          {link: "Leçons d'anglais", route: "/fr/lecons-d-anglais", name:"lessons"},
-          {link: "Traduction et relecture", route: "/fr/traduction-et-relecture", name:"translation"},  
-          {link: "Qui suis-je?", route: "/fr/qui-suis-je", name:"about"},
-          {link: "Contactez-moi", route: "/fr/contact", name:"contact"},]
-    }
-
-let selected = langs[lang]
-
+const sideBar = Object.keys(router).filter(fil => fil != "imprint" && fil != "tc" && fil != "privacy")
 ---
+
 <aside class="menu">
   <ul class="menu-list is-hidden-mobile">
-  {selected.map(el => (
-    el.name == location ? <li><a class="is-active" href={el.route}>{el.link}</a></li> : <li><a href={el.route}>{el.link}</a></li>
-))} 
+    {sideBar.map(el => (
+      el == location ? <li><a class="is-active" href={router[el][lang].route}>{router[el][lang].name}</a></li> : <li><a href={router[el][lang].route}>{router[el][lang].name}</a></li>
+    ))}
   </ul>
-   <ul class="menu-list is-hidden-tablet has-text-centered">
-  {selected.map(el => (
-    el.name == location ? <li><a class="is-active" href={el.route}>{el.link}</a></li> : <li><a href={el.route}>{el.link}</a></li>
-))} 
+  <ul class="menu-list is-hidden-tablet has-text-centered">
+    {sideBar.map(el => (
+      el == location ? <li><a class="is-active" href={router[el][lang].route}>{router[el][lang].name}</a></li> : <li><a href={router[el][lang].route}>{router[el][lang].name}</a></li>
+    ))}
   </ul>
 </aside>
