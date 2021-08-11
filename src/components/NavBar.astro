@@ -4,21 +4,16 @@ import router from '../data/router.json';
 const {lang,location} = Astro.props
 
 let allLang = router[location]
-
-
-
 ---
-<div class="langswitcher columns mb-5">
-<div class="column is-10"></div>
-<div class="column pt-5">
+<div class="langswitcher columns mb-5 is-flex-direction-row-reverse">
+<div class="column is-1 is-hidden-mobile"></div>
+<div class="column pt-5 is-3 has-text-right mr-3">
       {Object.keys(allLang).map((el,idx) => (
-         <span><a href={allLang[el].route}>{el == lang ? <b>{allLang[el].link}</b> : allLang[el].link}</a>{idx == 2 ? "" :" | "}</span>
+         <span><a href={allLang[el].route}>{el == lang ? <span class="brand-red"><b>{allLang[el].link}</b></span> : <span class="brand-black">{allLang[el].link}</span>}</a>{idx == 2 ? "" :" | "}</span>
           ))}
 </div>
-
 </div>  
-<div class="columns mt-3">
-  <!-- <div class="column is-1"></div> -->
+<div class="columns mt-3 is-hidden-mobile">
   <div class="column is-1 ml-6">
   <a class="" href="/">
       <img width="140" height="140" src="/assets/images/plh_logo_theEnglishNook.png" alt="The English Nook logo">
@@ -28,6 +23,17 @@ let allLang = router[location]
     <h1 class="brand-red is-size-2">The Engli<span class="brand-yellow">sh</span> Nook</h1>
     <p class="brand-red">/ˈɪŋɡl(ɪ)<span class="brand-yellow">ʃ</span>nʊk/</p>
   </div>
+</div>
 
+<div class="columns is-hidden-tablet has-text-centered">
+  <div class="column is-1 pb-0">
+  <a class="" href="/">
+      <img width="80" height="80" src="/assets/images/plh_logo_theEnglishNook.png" alt="The English Nook logo">
+    </a>
+  </div>
+  <div class="column is-5 pb-0 pt-0">
+    <h1 class="brand-red is-size-2">The Engli<span class="brand-yellow">sh</span> Nook</h1>
+    <p class="brand-red">/ˈɪŋɡl(ɪ)<span class="brand-yellow">ʃ</span>nʊk/</p>
+  </div>
 </div>
     

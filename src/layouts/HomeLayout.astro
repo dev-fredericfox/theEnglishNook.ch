@@ -9,7 +9,8 @@ import Definition from '../components/Definition.astro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<slot name="headerInfo" />
+    <slot name="headerInfo" />
+    <slot name="MetaSEO" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/style/global.css">
 
@@ -17,19 +18,23 @@ import Definition from '../components/Definition.astro';
 <body>
     <main>
         <slot name="NavBar" />
-            <div class="columns mt-1 pl-5">
-                <!-- <div class="column is-1"></div> -->
-                <div class="column is-2 mt-0 ml-6">
+            <div class="columns mt-1">
+                <div class="column mobile-sidebar is-3 mt-0 is-hidden-tablet has-text-centered">
                     <slot name="SideBar" />
                 </div>
-                <div class="column is-1"></div>
-                <div class="column is-5 ml-1 mt-2 has-text-centered">
+                <div class="column is-3 ml-6 pl-6 is-hidden-mobile">
+                    <slot name="SideBar" />
+                </div>
+                <!-- <div class="column is-1"></div> -->
+                <div class="column is-6 ml-5 mt-2 mr-5 mb-5 has-text-centered">
                     <slot name="Main" />
             </div>
-              <div class="column is-3"></div>
+              <div class="column is-6 is-flex-desktop"></div>
         <!--<Definition/>-->
             </div>
+            <div class="mt-6 mb-4">
             <slot name="Footer" />
+            </div>
 
     </main>
 </body>

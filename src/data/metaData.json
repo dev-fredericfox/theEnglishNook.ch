@@ -1,0 +1,90 @@
+{
+    "home": {
+        "en": {
+            "description": "test meta"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "lessons": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "translation": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "about": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "contact": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "imprint": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "tc": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    },
+    "privacy": {
+        "en": {
+            "description": "EN"
+        },
+        "de": {
+            "description": "DE"
+        },
+        "fr": {
+            "description": "FR"
+        }
+    }
+}

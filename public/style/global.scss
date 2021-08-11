@@ -39,16 +39,24 @@ body {
   width: 100%;
 }
 
+.mobile-sidebar .menu-list {
+  line-height:0.75;
+}
+
 .langswitcher {
   background-color: rgba(192,64,0,0.3);
 }
 
 .brand-red {
-  color: #C04000
+  color: #C04000;
+}
+
+.brand-black {
+  color: #000!important;
 }
 
 .brand-yellow {
- color: #C7A317
+ color: #C7A317;
 }
 
 .dropdown-menu {
