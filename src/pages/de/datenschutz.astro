@@ -1,6 +1,7 @@
 ---
 import LegalLayout from '../../layouts/LegalLayout.astro';
 import Imprint from '../../components/Imprint.astro';
+import Privacy from '../../components/Privacy.astro'
 import NavBar from '../../components/NavBar.astro';
 import Footer from '../../components/Footer.astro';
 ---
@@ -8,7 +9,7 @@ import Footer from '../../components/Footer.astro';
 <LegalLayout>
 <title slot="headerInfo">Datenschutz</title>
     <NavBar slot="NavBar" lang="de" location="privacy"/> 
-    <Imprint slot="Main" lang="de"/>
+    <Privacy slot="Main"/>
     <Footer slot="Footer" lang="de"/>   
 
 </LegalLayout>
