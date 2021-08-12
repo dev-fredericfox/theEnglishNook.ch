@@ -2,22 +2,19 @@
 const {lang} = Astro.props
 const translatedContent = {
     en : {
-            title       : 'CELTA-qualified English Teacher & Translator/Proofreader (FR/DE - EN)', 
-            subTitle    : "Résumé",
+            title       : 'CELTA-qualified English (ESL) Teacher </br>& </br>Translator/Proofreader (FR/DE - EN)', 
             body        : ["Having been raised on both sides of the Atlantic, I grew up enthralled by the music of words. As the daughter of a translator and interpreter, I could not help but feel drawn to my mother's mysterious and scintillating world of languages - a world infused with sonorous colour, where cultural boundaries take on fluid and melodious meanings. From teaching and translation to literature and the natural world around me, this love of words has never ceased to guide me and - much as a beacon upon the shores of a turbulent sea - remains my faithful phare lighting the uncharted waters ahead.",
-                          "Whether your query concerns English instruction, translation or anything in between, please do not hesitate to contact me for further information. Your needs are my priority, and I look forward to working with you in whatever way this may be.",]
+                          "Whether your query concerns English instruction, translation or anything in between, please do not hesitate to contact me for further information. Whilst I may be in Switzerland, I welcome clients from around the world, and I look forward to working with you in whatever way this may be.",]
             },
     de : {
-            title       : 'CELTA-qualifizierte Englischlehrerin und Übersetzerin/Korrekturleserin (FR/DE - EN)', 
-            subTitle    : "Lebenslauf",
+            title       : 'CELTA-qualifizierte (ESL) Englischlehrerin </br>& </br> Übersetzerin/Korrekturleserin (FR/DE - EN)', 
             body        : ["Da ich auf beiden Seiten des Atlantiks großgezogen wurde, bin ich von der Musik der Wörter fasziniert aufgewachsen. Als Tochter einer Übersetzerin und Dolmetscherin konnte ich nicht anders, als mich von der geheimnisvollen und schillernden Welt der Sprachen meiner Mutter angezogen zu fühlen - einer Welt, die von klangvollen Farben durchdrungen ist und in der kulturelle Grenzen fließende und melodiöse Bedeutungen annehmen. Vom Unterrichten und Übersetzen bis hin zur Literatur und der Natur um mich herum hat diese Liebe zu den Wörtern nie aufgehört, mich zu leiten und - ähnlich wie ein Leuchtfeuer am Ufer einer bewegten See - beibt mein treuer Leuchtturm, der die unerforschten Gewässer beleuchtet.",
-                        "Ob Ihre Anfrage Englischunterricht, Übersetzung oder irgendetwas dazwischen betrifft, zögern Sie bitte nicht, mich für nähere Informationen zu kontaktieren. Ihre Bedürfnisse haben für mich Priorität, und ich freue mich darauf, mit Ihnen zusammenzuarbeiten, auf welche Weise auch immer das sein mag.",]
+                        "Ob Ihre Anfrage Englischunterricht, Übersetzung oder irgendetwas dazwischen betrifft, zögern Sie bitte nicht, mich für nähere Informationen zu kontaktieren. Obwohl ich mich in der Schweiz befinde, heiße ich Kunden/-innen aus der ganzen Welt willkommen und freue mich darauf, mit Ihnen zusammenzuarbeiten, auf welche Weise auch immer das sein mag.",]
             },
     fr : {
-            title       : "Enseignante d'anglais diplômée du CELTA et traductrice/relectrice (FR/DE - EN)", 
-            subTitle    : "Résumé",
+            title       : "Enseignante d'anglais (ESL) diplômée du CELTA </br>& </br> traductrice/relectrice (FR/DE - EN)", 
             body        : ["Ayant été élevée des deux côtés de l'Atlantique, j'ai grandi fascinée par la musique des mots. Fille d'une traductrice- interprète, je ne pouvais que me sentir attirée par le monde mystérieux et scintillant de langues de ma mère - un monde infusé de couleurs sonores où les frontières culturelles prennent des sens fluides et mélodieux. De l'enseignement et la traduction en passant par la littérature et le monde naturel qui m'entoure, cet amour des mots n'a jamais cessé de me guider et - tel un fanal sur les rives d'une mer houleuse - reste mon phare fidèle qui éclaire les eaux inexplorées à venir. ",
-                          "Que votre demande concerne l'enseignement de l'anglais, la traduction ou tout autre sujet entre les deux, n'hésitez pas à me contacter pour de plus amples informations. Vos besoins sont ma priorité, et je me réjouis de travailler avec vous de quelque manière que ce soit."]
+                          "Que votre demande concerne l'enseignement de l'anglais, la traduction ou tout autre sujet entre les deux, n'hésitez pas à me contacter pour de plus amples informations. Bien que je me trouve en Suisse, j'accueille des clients du monde entier, et je me réjouis de travailler avec vous de quelque manière que ce soit."]
             },
     }
 
@@ -26,9 +23,8 @@ let currentLanguage = translatedContent[lang]
 
 ---
 <div class="content">
-<h2 class="is-size-4 mb-0">Simone Robinson</h2>
+<h2 class="is-size-4 mb-4"><span class="brand-red">S</span>imone <span class="brand-red">R</span>obinson</h2>
 <h3 class="is-size-5 mb-5 mt-0">{currentLanguage.title}</h3>
-<h4>{currentLanguage.subTitle}</h4>
 {currentLanguage.body.map(el => (
         <p>{el}</p>
 ))}

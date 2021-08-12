@@ -6,10 +6,13 @@ const {lang,location} = Astro.props
 
 const allLang = router[location]
 const description = MetaData[location][lang].description
+const title = MetaData[location][lang].title
 const domain = "https://www.theenglishnook.ch"
 ---
 {Object.keys(allLang).map((el,idx) => (
    <link rel="alternate" hreflang={allLang[el].link.toLowerCase()+"-ch"} href={domain+allLang[el].route} />
 ))}
 
-<meta name={Object.keys(MetaData[location][lang])} content={description} />
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
