@@ -43,6 +43,16 @@ body {
   width: 100%;
 }
 
+.feather-active:before {
+  background-image:url(/favicon.svg);
+  background-size: 14px 14px;
+  display: inline-block;
+  width: 14px; 
+  height: 14px;
+  content:"";
+  margin-right:5px;
+}
+
 .mobile-sidebar .menu-list {
   line-height: 0.75;
 }
@@ -68,13 +78,17 @@ body {
 }
 
 img.feather {
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   cursor: pointer;
   opacity: 0;
 }
-img.feather:hover {
+.sidebar:hover .inactive {
   opacity: 1;
+}
+
+.sidebar a {
+  display: inline-block!important;
 }
 
 img.active {
