@@ -7,7 +7,7 @@ It's a simple multilingual website for a CELTA-qualified English Teacher & Trans
 
 ## Project Structure
 
-
+```
 ├── src/  
 │   ├── components/  
 │   ├── layouts/  
@@ -19,6 +19,7 @@ It's a simple multilingual website for a CELTA-qualified English Teacher & Trans
 │               └── FR index.astro  
 ├── public/  
 └── package.json  
+```
 
 Components are multilingual and display the right language according to the language called in the page's `<slot>`  
 Example `src/pages/de/kontakt.astro` calles `<Contact slot="Main" lang="de"/>` and `src/pages/contact.astro` calls `<Contact slot="Main" lang="en"/>`
