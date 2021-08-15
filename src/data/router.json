@@ -37,17 +37,17 @@
         "en": {
             "link": "EN",
             "route": "/translation-and-proofreading",
-            "name": "Translation & Proofreading"
+            "name": "Translation <span class=\"brand-red\">&</span> Proofreading"
         },
         "de": {
             "link": "DE",
             "route": "/de/uebersetzung-korrekturlesen",
-            "name": "Übersetzung & Korrekturlesen"
+            "name": "Übersetzung <span class=\"brand-red\">&</span> Korrekturlesen"
         },
         "fr": {
             "link": "FR",
             "route": "/fr/traduction-et-relecture",
-            "name": "Traduction et relecture"
+            "name": "Traduction <span class=\"brand-red\">&</span> relecture"
         }
     },
     "about": {
@@ -105,7 +105,7 @@
         "en": {
             "link": "EN",
             "route": "/terms-and-conditions",
-            "name": "Terms & Conditions"
+            "name": "Terms <span class=\"brand-black\">&</span> Conditions"
         },
         "de": {
             "link": "DE",
