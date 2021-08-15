@@ -8,17 +8,17 @@ It's a simple multilingual website for a CELTA-qualified English Teacher & Trans
 ## Project Structure
 
 ```
-├── src/  
-│   ├── components/  
-│   ├── layouts/  
-│   ├── data/  
-│   └── pages/  
-│       └── EN index.astro  
-│           ├── de/  
-│           └── fr/  
-│               └── FR index.astro  
-├── public/  
-└── package.json  
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── data/
+│   └── pages/
+│       └── EN index.astro
+│           ├── de/
+│           └── fr/
+│               └── FR index.astro
+├── public/
+└── package.json
 ```
 
 Components are multilingual and display the right language according to the language called in the page's `<slot>`  
