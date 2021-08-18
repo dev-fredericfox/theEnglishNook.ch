@@ -1,14 +1,11 @@
 <template>
-  <h2>HTML Forms</h2>
   <form
     id="contact"
     action="/"
   >
     <fieldset :disabled="formStatus.disabled">
       <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">From</label>
-        </div>
+        
         <div class="field-body">
           <div class="field">
             <p class="control is-expanded">
@@ -21,7 +18,7 @@
               />
             </p>
             <p v-if="formValidation.fname" class="help is-danger">
-              This field is required
+              Required
             </p>
           </div>
           <div class="field">
@@ -35,7 +32,7 @@
               />
             </p>
             <p v-if="formValidation.lname" class="help is-danger">
-              This field is required
+              Required
             </p>
           </div>
         </div>
@@ -50,21 +47,19 @@
                 class="input"
                 v-bind:class="{ 'is-danger': formValidation.email }"
                 type="tel"
-                placeholder="Your Email"
+                placeholder="E-mail"
                 v-model="form.email"
               />
             </p>
             <p v-if="formValidation.email" class="help is-danger">
-              This field is required
+              Required
             </p>
           </div>
         </div>
       </div>
 
       <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Subject</label>
-        </div>
+        
         <div class="field-body">
           <div class="field">
             <div class="control">
@@ -72,33 +67,31 @@
                 class="input"
                 v-bind:class="{ 'is-danger': formValidation.subject }"
                 type="text"
-                placeholder="e.g. English Lessons"
+                placeholder="Subject"
                 v-model="form.subject"
               />
             </div>
             <p v-if="formValidation.subject" class="help is-danger">
-              This field is required
+              Required
             </p>
           </div>
         </div>
       </div>
 
       <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Message</label>
-        </div>
+        
         <div class="field-body">
           <div class="field">
             <div class="control">
               <textarea
                 class="textarea"
-                placeholder="Explain how we can help you"
+                placeholder="How may I help you…?"
                 v-bind:class="{ 'is-danger': formValidation.message }"
                 v-model="form.message"
               ></textarea>
             </div>
             <p v-if="formValidation.message" class="help is-danger">
-              This field is required
+              Required
             </p>
           </div>
         </div>
@@ -112,13 +105,13 @@
           <div class="field">
             <div class="control">
               <button
-                class="g-recaptcha button is-primary"
+                class="g-recaptcha button is-info is-small"
                 :class="{'is-loading' : formStatus.disabled}"
                 data-sitekey="6LfeXgccAAAAAPeC-YrfS3bGHOgIMoYzROdNJ8Ur"
                 data-callback="validateForm"
                 data-action="submit"
               >
-                Validate Form
+                Send
               </button>
               <p v-if="formStatus.error" class="help is-danger">
               Something went wrong, please try sending the form again.
@@ -177,10 +170,6 @@ export default {
         header: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       };
-      console.log(postReqSettings);
-      // fetch("http://localhost:5000/test", postReqSettings)
-      //   .then((response) => response.json())
-      //   .then((data) => console.log(data));
       try {
         const response = await fetch("http://localhost:5000/test", postReqSettings)
         console.log(response)
@@ -188,7 +177,7 @@ export default {
         formStatus.disabled = false
         formStatus.sending = false
         formStatus.error = true
-        console.log("oops error lol")
+        console.log("Post failed")
       }
     };
     ////Validation handler
