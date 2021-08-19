@@ -10,11 +10,13 @@
                   class="input"
                   v-bind:class="{ 'is-danger': formValidation.fname }"
                   type="text"
-                  placeholder="First Name"
+                  v-bind:placeholder="translatedContent[lang].fname"
                   v-model="form.fname"
                 />
               </p>
-              <p v-if="formValidation.fname" class="help is-danger">Required</p>
+              <p v-if="formValidation.fname" class="help is-danger">
+                {{ translatedContent[lang].required }}
+              </p>
             </div>
             <div class="field">
               <p class="control is-expanded">
@@ -22,11 +24,13 @@
                   class="input"
                   v-bind:class="{ 'is-danger': formValidation.lname }"
                   type="text"
-                  placeholder="Last Name"
+                  v-bind:placeholder="translatedContent[lang].lname"
                   v-model="form.lname"
                 />
               </p>
-              <p v-if="formValidation.lname" class="help is-danger">Required</p>
+              <p v-if="formValidation.lname" class="help is-danger">
+                {{ translatedContent[lang].required }}
+              </p>
             </div>
           </div>
         </div>
@@ -39,11 +43,13 @@
                   class="input"
                   v-bind:class="{ 'is-danger': formValidation.email }"
                   type="tel"
-                  placeholder="E-mail"
+                  v-bind:placeholder="translatedContent[lang].email"
                   v-model="form.email"
                 />
               </p>
-              <p v-if="formValidation.email" class="help is-danger">Required</p>
+              <p v-if="formValidation.email" class="help is-danger">
+                {{ translatedContent[lang].required }}
+              </p>
             </div>
           </div>
         </div>
@@ -56,12 +62,12 @@
                   class="input"
                   v-bind:class="{ 'is-danger': formValidation.subject }"
                   type="text"
-                  placeholder="Subject"
+                  v-bind:placeholder="translatedContent[lang].subj"
                   v-model="form.subject"
                 />
               </div>
               <p v-if="formValidation.subject" class="help is-danger">
-                Required
+                {{ translatedContent[lang].required }}
               </p>
             </div>
           </div>
@@ -73,13 +79,13 @@
               <div class="control">
                 <textarea
                   class="textarea"
-                  placeholder="How may I help you…?"
+                  v-bind:placeholder="translatedContent[lang].body"
                   v-bind:class="{ 'is-danger': formValidation.message }"
                   v-model="form.message"
                 ></textarea>
               </div>
               <p v-if="formValidation.message" class="help is-danger">
-                Required
+                {{ translatedContent[lang].required }}
               </p>
             </div>
           </div>
@@ -90,17 +96,17 @@
             <div class="field">
               <div class="control">
                 <button
-                  class="g-recaptcha button is-info is-small"
+                  class="g-recaptcha button is-info has-text-black-bis"
                   :class="{ 'is-loading': formStatus.disabled }"
                   data-sitekey="6LfeXgccAAAAAPeC-YrfS3bGHOgIMoYzROdNJ8Ur"
                   data-callback="validateForm"
                   data-action="submit"
                   @click="loading()"
                 >
-                  Send
+                  {{ translatedContent[lang].button }}
                 </button>
                 <p v-if="formStatus.error" class="help is-danger">
-                  Something went wrong, please try sending the form again.
+                  {{ translatedContent[lang].error }}
                 </p>
               </div>
             </div>
@@ -110,23 +116,56 @@
     </form>
   </div>
   <div v-if="formStatus.success">
-    <p>WOW THE FORM WAS SENT LMAO</p>
+    <div class="box ml-6 mr-6">
+      <p>{{ translatedContent[lang].success }}</p>
+    </div>
   </div>
   <!-- endNew -->
-
-  <div class="children">
-    <slot />
-  </div>
 </template>
 
 <script>
 import { ref, reactive, onMounted } from "vue";
 export default {
   props: {
-    slot: String,
     lang: String,
   },
   setup() {
+    //LANGUAGE SUPPORT
+    const translatedContent = {
+      en: {
+        fname: "First Name",
+        lname: "Last Name",
+        email: "E-Mail",
+        subj: "Subject",
+        body: "How may I help you…?",
+        required: "Required",
+        error: "Something went wrong, please try sending the form again.",
+        success: "Your message was successfully sent!",
+        button: "Send"
+      },
+      de: {
+        fname: "Vorname",
+        lname: "Nachname",
+        email: "E-Mail",
+        subj: "Subject",
+        body: "How may I help you…?",
+        required: "Requred",
+        error: "Something went wrong, please try sending the form again.",
+        success: "Your message was successfully sent!",
+        button: "Send"
+      },
+      fr: {
+        fname: "Prénom",
+        lname: "Last Name",
+        email: "E-Mail",
+        subj: "Subject",
+        body: "How may I help you…?",
+        required: "Requred",
+        error: "Something went wrong, please try sending the form again.",
+        success: "Your message was successfully sent!",
+        button: "Send"
+      },
+    };
     //VARIABLES
     ////form data
     const form = ref({
@@ -157,13 +196,12 @@ export default {
     const postForm = async () => {
       const postReqSettings = {
         method: "POST",
-        mode: 'cors',
+        mode: "cors",
         header: {
-          'Accept': "application/json",
-          'Content-Type': "application/json",
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
-          body: JSON.stringify({"username": "xyz"}),
-
+        body: JSON.stringify({ username: "xyz" }),
       };
       try {
         console.log(postReqSettings);
@@ -177,11 +215,11 @@ export default {
         } else {
           throw "Form sending failed";
         }
-      } catch (error){
+      } catch (error) {
         formStatus.disabled = false;
         formStatus.sending = false;
         formStatus.error = true;
-        console.log("Post failed. Reason:"+error);
+        console.log("Post failed. Reason:" + error);
       }
     };
     ////Validation handler
@@ -224,6 +262,7 @@ export default {
       formValidation,
       validateForm,
       loading,
+      translatedContent,
       formStatus,
     };
   },

@@ -8,7 +8,8 @@ $transparent: rgba(0, 0, 0, 0);
 $red: rgba(192, 64, 0, 100);
 $black: rgba(0, 0, 0, 100);
 $primary:rgb(41,102,79,100);
-$info: rgb(199,163,23);
+$info: rgb(199,163,23,100);
+$greenBox: rgb(41,102,79,0.40);
 $menu-item-hover-background-color: $transparent;
 $menu-item-active-background-color: $transparent;
 $menu-item-hover-color: $red;
@@ -16,6 +17,9 @@ $menu-item-active-color: $red;
 $link-hover: $red;
 $link: $red;
 $navbar-item-color: $black;
+$box-background-color: $greenBox;
+
+
 
 @import "./vendors/bulma/bulma.sass";
 @import "./vendors/fontawesome/css/font-awesome.min.css";
