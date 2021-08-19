@@ -110,5 +110,19 @@
             "title":"",
             "description": "FR"
         }
+    },
+    "404": {
+        "en": {
+            "title":"The English Nook • 404",
+            "description": "EN"
+        },
+        "de": {
+            "title":"The English Nook • 404",
+            "description": "DE"
+        },
+        "fr": {
+            "title":"The English Nook • 404",
+            "description": "FR"
+        }
     }
 }

@@ -1,5 +1,6 @@
 ---
 import HomeLayout from '../../layouts/HomeLayout.astro';
+import MetaSEO from '../../components/MetaSEO.astro';
 import About from '../../components/About.astro';
 import NavBar from '../../components/NavBar.astro';
 import SideBar from '../../components/SideBar.astro';
@@ -9,6 +10,7 @@ import Footer from '../../components/Footer.astro';
 <HomeLayout>
 <title slot="headerInfo">Willkommen</title>
     <NavBar slot="NavBar" lang="de" location="about"/>
+    <MetaSEO slot="MetaSEO" lang="de" location="about"/>
     <SideBar slot="SideBar" lang="de" location="about"/>        
     <About slot="Main" lang="de"/>
     <Footer slot="Footer" lang="de"/>   

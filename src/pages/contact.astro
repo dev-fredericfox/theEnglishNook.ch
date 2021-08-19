@@ -1,5 +1,6 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro';
+import MetaSEO from '../components/MetaSEO.astro';
 import Contact from '../components/Contact.astro';
 import ContactForm from '../components/ContactForm.vue';
 import NavBar from '../components/NavBar.astro';
@@ -8,11 +9,11 @@ import Footer from '../components/Footer.astro';
 ---
 
 <HomeLayout>
-<title slot="headerInfo">Welcome</title>
+    <MetaSEO slot="MetaSEO" lang="en" location="contact"/>
     <NavBar slot="NavBar" lang="en" location="contact"/>
     <SideBar slot="SideBar" lang="en" location="contact"/>        
     <Contact slot="Main" lang="en"/>
-    <ContactForm slot="Main" lang="en" client:visible></ContactForm>
+    <ContactForm slot="Main" lang="en" client:visible/>
     <Footer slot="Footer" lang="en"/>   
 
 </HomeLayout>
