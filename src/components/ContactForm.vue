@@ -206,10 +206,11 @@ export default {
       try {
         console.log(postReqSettings);
         const response = await fetch(
-          "http://localhost:5000/test",
+          "https://us-central1-form-forwarder-v1.cloudfunctions.net/app/test",
           postReqSettings
         );
-        console.log(response.status);
+        console.dir(response);
+        console.dir(response.body);
         if (response.status == 200) {
           formStatus.success = true;
         } else {
