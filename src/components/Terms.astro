@@ -4,6 +4,23 @@ import termsTeaching from '../data/termsTeaching.json';
 
 const {lang} = Astro.props
 
+const translatedContent = {
+    en: {
+        translation:"Translation & Proofreading Services",
+        teaching:"Teaching Services"
+    },
+    de: {
+        translation:"Übersetzungs- und Korrekturlesedienstleistungen",
+        teaching:"Lehrdienstleistungen"
+    },
+    fr: {
+        translation:"Services de traduction et de relecture",
+        teaching:"Services d'enseignement"
+    }
+}
+let currentLanguage = translatedContent[lang]
+
+
 let translations = termsTranslation[lang]
 let keysTransl = Object.keys(translations).map(key => key)
 
@@ -14,14 +31,14 @@ let articlePrefix = ""
 
 ---
 <div class="content">
-<h1>Translation PLACEHOLDER</h1>
+<h1>{currentLanguage.translation}</h1>
 {keysTransl.map((elem, idx) => (
     <div><h2>{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}.` : `${idx+1}.`} {elem}</h2><p>{Object.keys(translations[elem]).map(subel => (
         <div><p><span>{subel}) </span> {translations[elem][subel]}</p></div>
         ))}</p></div>
     ))
     }
-<h1>Teaching PLACEHOLDER</h1>
+<h1>{currentLanguage.teaching}</h1>
 {keysTeach.map((elem, idx) => (
     <div><h2>{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}.` : `${idx+1}.`} {elem}</h2><p>{Object.keys(teaching[elem]).map(subel => (
         <div><p><span>{subel}) </span> {teaching[elem][subel]}</p></div>
