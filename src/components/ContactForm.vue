@@ -105,7 +105,7 @@
                 >
                   {{ translatedContent[lang].button }}
                 </button>
-                <p v-if="formStatus.error" class="help is-danger">
+                <p v-if="formStatus.error" class="help is-danger mt-2">
                   {{ translatedContent[lang].error }}
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default {
         subj: "Subject",
         body: "How may I help you…?",
         required: "Required",
-        error: "Something went wrong, please try sending the form again.",
+        error: "Oh no! Please try again.",
         success: "Your message was successfully sent!",
         button: "Send"
       },
@@ -147,23 +147,23 @@ export default {
         fname: "Vorname",
         lname: "Nachname",
         email: "E-Mail",
-        subj: "Subject",
-        body: "How may I help you…?",
-        required: "Requred",
-        error: "Something went wrong, please try sending the form again.",
-        success: "Your message was successfully sent!",
-        button: "Send"
+        subj: "Betreff",
+        body: "Wie kann ich Ihnen helfen…?",
+        required: "Bitte füllen Sie dieses Feld aus",
+        error: "Oh nein! Bitte, versuchen Sie es noch mal.",
+        success: "Ihre Nachricht wurde erfolgreich abgeschickt!",
+        button: "Abschicken"
       },
       fr: {
         fname: "Prénom",
-        lname: "Last Name",
+        lname: "Nom",
         email: "E-Mail",
-        subj: "Subject",
-        body: "How may I help you…?",
-        required: "Requred",
-        error: "Something went wrong, please try sending the form again.",
-        success: "Your message was successfully sent!",
-        button: "Send"
+        subj: "Sujet",
+        body: "Comment puis-je vous aider…?",
+        required: "Veuillez remplir ce champ",
+        error: "Oh non! Réessayez, s'il vous plaît.",
+        success: "Votre message a été envoyé avec succès!",
+        button: "Envoyer"
       },
     };
     //VARIABLES
