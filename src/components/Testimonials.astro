@@ -3,7 +3,7 @@ const {lang, category} = Astro.props
 const translatedContent = {
     teaching: [
         {
-            testimonial: "\"Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\"",
+            testimonial: "\"Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone, the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\"",
             author: "Upwork Client (Level: B2)",
             country: "Belgium",
             date: "January 2021"
@@ -13,6 +13,12 @@ const translatedContent = {
             author: "Head of <i>New Speakeasy</i>",
             country: "Italy",
             date: "August 2021"
+        },{
+            testimonial: "\"Her thoughtful, open-minded and conscientious character [stood] out since the beginning [of her CELTA training], and she never [ceased] to evince a clear and admirable commitment to helping others in every aspect of their English endeavours.\"",
+            author: "CELTA Course Director",
+            country: "Spain",
+            date: "July 2021"
+
         }
     ],
     translation: [
@@ -33,6 +39,7 @@ const translatedContent = {
 ---
 <div class="content">
 <img class="feather active mb-5"src="/favicon.svg">
+<h3 class="is-size-5"><span class="brand-red">Reviews</span></h3>
 <div>
 {translatedContent[category].map(el => (
     <div>
