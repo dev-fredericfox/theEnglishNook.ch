@@ -3,12 +3,16 @@ import LegalLayout from '../layouts/LegalLayout.astro';
 import Privacy from '../components/Privacy.astro'
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
+const nav = {
+    lang: "en",
+    loc: "privacy"
+}
 ---
 
 <LegalLayout>
 <title slot="headerInfo">Protection des donnees</title>
-    <NavBar slot="NavBar" lang="en" location="privacy"/> 
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/> 
     <Privacy slot="Main"/>
-    <Footer slot="Footer" lang="en"/>   
+    <Footer slot="Footer" lang={nav.lang}/>   
 
 </LegalLayout>

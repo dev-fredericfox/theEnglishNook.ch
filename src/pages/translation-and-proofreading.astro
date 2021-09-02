@@ -6,14 +6,17 @@ import Testimonials from '../components/Testimonials.astro';
 import NavBar from '../components/NavBar.astro';
 import SideBar from '../components/SideBar.astro';
 import Footer from '../components/Footer.astro';
+const nav = {
+    lang: "en",
+    loc: "translation"
+}
 ---
 
 <HomeLayout>
-    <MetaSEO slot="MetaSEO" lang="en" location="translation"/>
-    <NavBar slot="NavBar" lang="en" location="translation"/>
-    <SideBar slot="SideBar" lang="en" location="translation"/>        
-    <Translation slot="Main" lang="en"/>
-    <Testimonials slot="Testimonials" category="translation"/>
-    <Footer slot="Footer" lang="en"/>   
+    <MetaSEO slot="MetaSEO" lang={nav.lang} location={nav.loc}/>
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/>
+    <SideBar slot="SideBar" lang={nav.lang} location={nav.loc}/>        
+    <Translation slot="Main" lang={nav.lang}/>
+    <Footer slot="Footer" lang={nav.lang}/>   
 
 </HomeLayout>
