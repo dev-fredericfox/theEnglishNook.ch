@@ -54,10 +54,10 @@ let currentLanguage = translatedContent[lang]
 {currentLanguage.lessons.map(el => (
     <div>
         <p class="mb-0"><strong>{el.lessonName}</strong></p>
-        <p class="mt-0 mb-0 mt-0">{el?.lessonDetails?.map(det => (
+        <p class="mt-0 mb-0 ">{el?.lessonDetails?.map(det => (
                 <p class="mb-0 mt-0">{det}</p>
         ))}</p>
-        <p class="mt-0 mb-3 mt-0">{el?.lessonPrice}</p>
+        <p class="mt-0 mb-3">{el?.lessonPrice}</p>
     </div>
 ))}
 </div>

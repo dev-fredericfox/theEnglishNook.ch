@@ -6,16 +6,19 @@ const {lang} = Astro.props
 
 const translatedContent = {
     en: {
-        translation:"Translation & Proofreading Services",
-        teaching:"Teaching Services"
+        title:'Terms <span class="brand-red">&</span> Conditions',
+        translation:'<span class="brand-red">Translation </span><span class="brand-black">&</span> <span class="brand-red">Proofreading Services</span>',
+        teaching:'<span class="brand-red">Teaching Services</span>'
     },
     de: {
-        translation:"Übersetzungs- und Korrekturlesedienstleistungen",
-        teaching:"Lehrdienstleistungen"
+        title: "Allgemeine Geschäftsbedingungen",
+        translation:'<span class="brand-red">Übersetzungs- </span><span class="brand-black">&</span> <span class="brand-red">Korrekturlesedienstleistungen</span>',
+        teaching:'<span class="brand-red">Lehrdienstleistungen</span>'
     },
     fr: {
-        translation:"Services de traduction et de relecture",
-        teaching:"Services d'enseignement"
+        title: "Conditions générales",
+        translation:'<span class="brand-red">Services de traduction</span> <span class="brand-black">&</span> <span class="brand-red">de relecture</span>',
+        teaching:'<span class="brand-red">Services d\'enseignement</span>'
     }
 }
 let currentLanguage = translatedContent[lang]
@@ -31,16 +34,17 @@ let articlePrefix = ""
 
 ---
 <div class="content">
-<h1>{currentLanguage.translation}</h1>
+<h1 class="has-text-centered is-size-4 mb-0">{currentLanguage.title}</h1>
+<h2 class="has-text-centered is-size-5 mt-4">{currentLanguage.translation}</h2>
 {keysTransl.map((elem, idx) => (
-    <div><h2>{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}.` : `${idx+1}.`} {elem}</h2><p>{Object.keys(translations[elem]).map(subel => (
+    <div><h3 class="mt-4 is-size-5">{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}. ` : `${idx+1}. `} {elem}</h3><p>{Object.keys(translations[elem]).map(subel => (
         <div><p><span>{subel}) </span> {translations[elem][subel]}</p></div>
         ))}</p></div>
     ))
     }
-<h1>{currentLanguage.teaching}</h1>
+<h2 class="has-text-centered is-size-5">{currentLanguage.teaching}</h2>
 {keysTeach.map((elem, idx) => (
-    <div><h2>{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}.` : `${idx+1}.`} {elem}</h2><p>{Object.keys(teaching[elem]).map(subel => (
+    <div><h3 class="mt-4 is-size-5">{lang == "fr" ? `Art. ${idx+1} - ` : lang == "de" ? `§ ${idx+1}. ` : `${idx+1}. `} {elem}</h3><p>{Object.keys(teaching[elem]).map(subel => (
         <div><p><span>{subel}) </span> {teaching[elem][subel]}</p></div>
         ))}</p></div>
     ))
