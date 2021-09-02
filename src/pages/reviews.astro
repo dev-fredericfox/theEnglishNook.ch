@@ -1,0 +1,20 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+import MetaSEO from '../components/MetaSEO.astro';
+import Testimonials from '../components/Testimonials.astro';
+import NavBar from '../components/NavBar.astro';
+import SideBar from '../components/SideBar.astro';
+import Footer from '../components/Footer.astro';
+const nav = {
+    lang: "en",
+    loc: "reviews"
+}
+---
+
+<HomeLayout>
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/>
+    <MetaSEO slot="MetaSEO" lang={nav.lang} location={nav.loc}/>
+    <SideBar slot="SideBar" lang={nav.lang} location={nav.loc}/>        
+    <Testimonials slot="Main"/>
+    <Footer slot="Footer" lang={nav.lang}/>   
+</HomeLayout>

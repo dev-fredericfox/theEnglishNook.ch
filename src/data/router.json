@@ -50,89 +50,106 @@
             "name": "Traduction <span class=\"brand-red\">&</span> relecture"
         }
     },
-    "about": {
+    "reviews": {
         "en": {
             "link": "EN",
-            "route": "/about",
-            "name": "About"
+            "route": "/reviews",
+            "name": "Reviews"
         },
         "de": {
-            "link": "DE",
-            "route": "/de/ueber-mich",
-            "name": "Über mich"
+            "link"  : "DE",
+            "route" : "/de/rezensionen",
+            "name"  : "Rezensionen"
         },
         "fr": {
-            "link": "FR",
-            "route": "/fr/qui-suis-je",
-            "name": "Qui suis-je?"
+            "link"  : "FR",
+            "route" : "/fr/commentaires",
+            "name"  :"Commentaires"
+        }
+    },
+    "about": {
+        "en": {
+            "link"  : "EN",
+            "route" : "/about",
+            "name"  : "About"
+        },
+        "de": {
+            "link"  : "DE",
+            "route" : "/de/ueber-mich",
+            "name"  : "Über mich"
+        },
+        "fr": {
+            "link"  : "FR",
+            "route" : "/fr/qui-suis-je",
+            "name"  : "Qui suis-je?"
         }
     },
     "contact": {
         "en": {
-            "link": "EN",
-            "route": "/contact",
-            "name": "Contact"
+            "link"  : "EN",
+            "route" : "/contact",
+            "name"  : "Contact"
         },
         "de": {
-            "link": "DE",
-            "route": "/de/kontakt",
-            "name": "Kontakt"
+            "link"  : "DE",
+            "route" : "/de/kontakt",
+            "name"  : "Kontakt"
         },
         "fr": {
-            "link": "FR",
-            "route": "/fr/contact",
-            "name": "Contactez-moi"
+            "link"  : "FR",
+            "route" : "/fr/contact",
+            "name"  : "Contactez-moi"
         }
     },
     "imprint": {
         "en": {
-            "link": "EN",
-            "route": "/imprint",
-            "name": "Imprint"
+            "link"  : "EN",
+            "route" : "/imprint",
+            "name"  : "Imprint"
         },
         "de": {
-            "link": "DE",
-            "route": "/de/impressum",
-            "name": "Impressum"
+            "link"  : "DE",
+            "route" : "/de/impressum",
+            "name"  : "Impressum"
         },
         "fr": {
-            "link": "FR",
-            "route": "/fr/mentions-legales",
-            "name": "Mentions légales"
+            "link"  : "FR",
+            "route" : "/fr/mentions-legales",
+            "name"  : "Mentions légales"
         }
     },
     "tc": {
         "en": {
-            "link": "EN",
-            "route": "/terms-and-conditions",
-            "name": "Terms <span class=\"brand-black\">&</span> Conditions"
+            "link"  : "EN",
+            "route" : "/terms-and-conditions",
+            "name"  : "Terms <span class=\"brand-black\">&</span> Conditions"
         },
         "de": {
-            "link": "DE",
-            "route": "/de/agb",
-            "name": "AGB"
+            "link"  : "DE",
+            "route" : "/de/agb",
+            "name"  : "AGB"
         },
         "fr": {
-            "link": "FR",
-            "route": "/fr/cgv",
-            "name": "Conditions générales"
+            "link"  : "FR",
+            "route" : "/fr/cgv",
+            "name"  : "Conditions générales"
         }
     },
     "privacy": {
         "en": {
-            "link": "EN",
-            "route": "/privacy-policy",
-            "name": "Privacy Policy"
+            "link"  : "EN",
+            "route" : "/privacy-policy",
+            "name"  : "Privacy Policy"
         },
         "de": {
-            "link": "DE",
-            "route": "/de/datenschutz",
-            "name": "Datenschutz"
+            "link"  : "DE",
+            "route" : "/de/datenschutz",
+            "name"  : "Datenschutz"
         },
         "fr": {
-            "link": "FR",
-            "route": "/fr/protection-des-donnees",
-            "name": "Protection des données"
+            "link"  : "FR",
+            "route" : "/fr/protection-des-donnees",
+            "name"  : "Protection des données"
         }
     }
 }

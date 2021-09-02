@@ -38,12 +38,25 @@ const translatedContent = {
 }
 ---
 <div class="content">
-<img class="feather active mb-5"src="/favicon.svg">
-<h3 class="is-size-5"><span class="brand-red">Reviews</span></h3>
+<!--<img class="feather active mb-5"src="/favicon.svg">-->
+<h2 class="is-size-4"><span class="brand-red">Reviews</span></h2>
+<h3 class="is-size-5">Teaching</h3>
 <div>
-{translatedContent[category].map(el => (
+{translatedContent["teaching"].map(el => (
     <div>
-    <p class="mt-0 mb-2">{el.testimonial}</p>
+    <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
+    <p class="testimonial mt-0 mb-0"><b>{el.author}</b></p>
+    <p class="testimonial mt-0 mb-0">{el.country}</p>
+    <p class="testimonial mt-0 mb-5">{el.date}</p>
+    </div>
+    ))}
+</div>
+<img class="feather active mb-5"src="/favicon.svg">
+<h3 class="is-size-5 mt-5">Translation & Proofreading (French/German into English)</h3>
+<div>
+{translatedContent["translation"].map(el => (
+    <div>
+    <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
     <p class="testimonial mt-0 mb-0"><b>{el.author}</b></p>
     <p class="testimonial mt-0 mb-0">{el.country}</p>
     <p class="testimonial mt-0 mb-5">{el.date}</p>

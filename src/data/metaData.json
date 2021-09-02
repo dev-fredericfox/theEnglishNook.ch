@@ -41,6 +41,20 @@
             "description": "Traduction de textes généraux et spécialisés (français/allemand-anglais) • Relecture par un locutrice native • Grammaire, ponctuation, orthographe et syntaxe"
         }
     },
+    "reviews":{
+        "en": {
+            "title":"",
+            "description":""
+        },
+        "de": {
+            "title":"",
+            "description":""
+        },
+        "fr": {
+            "title":"",
+            "description":""
+        }
+    },
     "about": {
         "en": {
             "title": "The English Nook • About",
