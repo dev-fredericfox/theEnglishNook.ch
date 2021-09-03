@@ -34,13 +34,27 @@ const translatedContent = {
             country: "California",
             date: "April 2016"
         }
-    ]
+    ],
+    titles: {
+            en: {
+                teaching: "Teaching",
+                translation: "Translation & Proofreading (French/German into English)"
+            },
+            de:  {
+                teaching: "Unterricht",
+                translation: "Übersetzung & Korrekturlesen (Französisch/Deutsch ins Englische)"
+            },
+            fr:  {
+                teaching: "Enseignement",
+                translation: "Traduction et relecture (Le français/L'allemand vers l'anglais)"
+            },
+    }
 }
 ---
 <div class="content">
 <!--<img class="feather active mb-5"src="/favicon.svg">-->
 <h2 class="is-size-4"><span class="brand-red">Reviews</span></h2>
-<h3 class="is-size-5">Teaching</h3>
+<h3 class="is-size-5">{translatedContent.titles[lang].teaching}</h3>
 <div>
 {translatedContent["teaching"].map(el => (
     <div>
@@ -52,7 +66,7 @@ const translatedContent = {
     ))}
 </div>
 <img class="feather active mb-5"src="/favicon.svg">
-<h3 class="is-size-5 mt-5">Translation & Proofreading (French/German into English)</h3>
+<h3 class="is-size-5">{translatedContent.titles[lang].translation}</h3>
 <div>
 {translatedContent["translation"].map(el => (
     <div>
