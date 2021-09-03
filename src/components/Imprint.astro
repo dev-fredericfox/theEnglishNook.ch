@@ -17,7 +17,7 @@ const translatedContent = {
             webmaster:''
                 },
     fr : {
-            title: "Mentions Legales", 
+            title: "Mentions légales", 
             country: 'Suisse',
             vat:'Selon la loi suisse régissant la TVA (v. <a href="https://www.fedlex.admin.ch/eli/cc/2009/615/fr#a10">LTVA, art. 10, al. 2-a</a>), <i>The English Nook</i> n’est pas assujetti à la TVA.',
             illustration: 'Illustrations de Nadine | The Burrow of Bells (<a href="www.theburrowofbells.com">www.theburrowofbells.com</a>)',
@@ -27,14 +27,16 @@ const translatedContent = {
 
 ---
 <div class="content">
-<h2>{translatedContent[lang].title}</h2>
+<h2 class="is-size-4 has-text-centered">{translatedContent[lang].title}</h2>
+<div>
 <p class="mt-0 mb-0">Simone Robinson</p>
 <p class="mt-0 mb-0">Gibelmatte 21</p>
 <p class="mt-0 mb-0">6166 Hasle (LU)</p>
 <p class="mt-0 mb-0">{translatedContent[lang].country}</p>
 <p class="mt-0 mb-0">tel. 41 (041) 481 01 97</p>
-<p class="mt-0 mb-3">info@theenglishnook.ch</p>
+<p class="mt-0 mb-4">info@theenglishnook.ch</p>
 <p class="mt-0 mb-3">{translatedContent[lang].vat}</p>
 <p class="mt-0 mb-0">{translatedContent[lang].illustration}</p>
 <p class="mt-0 mb-0">{translatedContent[lang].webmaster}</p>
+</div>
 </div>

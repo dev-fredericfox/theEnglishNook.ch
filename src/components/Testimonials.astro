@@ -37,43 +37,46 @@ const translatedContent = {
     ],
     titles: {
             en: {
+                title: "Testimonials",
                 teaching: "Teaching",
-                translation: "Translation & Proofreading (French/German into English)"
+                translation: "Translation <span class=\"brand-black\">& </span>Proofreading (French/German into English)"
             },
             de:  {
+                title: "Referenzen",
                 teaching: "Unterricht",
-                translation: "Übersetzung & Korrekturlesen (Französisch/Deutsch ins Englische)"
+                translation: "Übersetzung <span class=\"brand-black\">& </span> Korrekturlesen (Französisch/Deutsch ins Englische)"
             },
             fr:  {
+                title: "Témoignages",
                 teaching: "Enseignement",
-                translation: "Traduction et relecture (Le français/L'allemand vers l'anglais)"
+                translation: "Traduction <span class=\"brand-black\">& </span> relecture (français/allemand vers l'anglais)"
             },
     }
 }
 ---
 <div class="content">
 <!--<img class="feather active mb-5"src="/favicon.svg">-->
-<h2 class="is-size-4"><span class="brand-red">Reviews</span></h2>
-<h3 class="is-size-5">{translatedContent.titles[lang].teaching}</h3>
+<h2 class="is-size-4">{translatedContent.titles[lang].title}</h2>
+<h3 class="is-size-5"><span class="brand-red">{translatedContent.titles[lang].teaching}<span></h3>
 <div>
 {translatedContent["teaching"].map(el => (
     <div>
     <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
-    <p class="testimonial mt-0 mb-0"><b>{el.author}</b></p>
-    <p class="testimonial mt-0 mb-0">{el.country}</p>
-    <p class="testimonial mt-0 mb-5">{el.date}</p>
+    <p class="line-height-1 mt-0 mb-0"><b>{el.author}</b></p>
+    <p class="line-height-1 mt-0 mb-0">{el.country}</p>
+    <p class="line-height-1 mt-0 mb-5">{el.date}</p>
     </div>
     ))}
 </div>
-<img class="feather active mb-5"src="/favicon.svg">
-<h3 class="is-size-5">{translatedContent.titles[lang].translation}</h3>
+<img class="feather active mb-0 mt-3"src="/favicon.svg">
+<h3 class="is-size-5"><span class="brand-red">{translatedContent.titles[lang].translation}</span></h3>
 <div>
 {translatedContent["translation"].map(el => (
     <div>
     <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
-    <p class="testimonial mt-0 mb-0"><b>{el.author}</b></p>
-    <p class="testimonial mt-0 mb-0">{el.country}</p>
-    <p class="testimonial mt-0 mb-5">{el.date}</p>
+    <p class="line-height-1 mt-0 mb-0"><b>{el.author}</b></p>
+    <p class="line-height-1 mt-0 mb-0">{el.country}</p>
+    <p class="line-height-1 mt-0 mb-5">{el.date}</p>
     </div>
     ))}
 </div>
