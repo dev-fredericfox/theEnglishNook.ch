@@ -1,13 +1,9 @@
 <template>
   <div>
-    test
-    <div class="mb-5">
-      {{ showCookieNotice }}
-    </div>
     <div v-if="showCookieNotice" class="content">
       <div class="modal is-active">
         <div class="modal-background"></div>
-        <div class="modal-card">
+        <div class="modal-card has-text-centered">
           <header class="modal-card-head">
             <h2 class="modal-card-title">Cookie Notice</h2>
           </header>
@@ -29,10 +25,10 @@
                 <input type="checkbox" v-model="analytics" />
                 Analytics
               </label>
-              <label class="checkbox">
+              <!-- <label class="checkbox">
                 <input type="checkbox" v-model="marketing" />
                 Marketing
-              </label>
+              </label> -->
             </div>
           </section>
           <footer class="modal-card-foot is-justify-content-center">
@@ -58,13 +54,13 @@ export default {
     const cookieSetting = reactive({
       functional: true,
       analytics: false,
-      marketing: false,
+      // marketing: false,
     });
     // FUNCTIONS
     const setAll = function () {
       cookieSetting.functional = true;
       cookieSetting.analytics = true;
-      cookieSetting.marketing = true;
+      // cookieSetting.marketing = true;
       setSelection();
     };
 
@@ -106,7 +102,7 @@ export default {
         cookie = JSON.parse(cookie);
         cookieSetting.functional = cookie.functional;
         cookieSetting.analytics = cookie.analytics;
-        cookieSetting.marketing = cookie.marketing;
+        // cookieSetting.marketing = cookie.marketing;
         addTagmanager()
         tagManagerSettings()
       }

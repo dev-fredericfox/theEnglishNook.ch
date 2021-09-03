@@ -2,6 +2,7 @@
 // Component Imports
 import Definition from '../components/Definition.astro';
 import Favicon from '../components/Favicon.astro';
+import CookieBanner from '../components/CookieBanner.vue';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -17,7 +18,7 @@ import Favicon from '../components/Favicon.astro';
 </head>
 <body>
     <main>
-        <slot name="NavBar" />
+        <slot name="NavBar" /> 
             <div class="columns mt-1">
                 <div class="column mobile-sidebar is-3 mt-0 is-hidden-tablet has-text-centered">
                     <slot name="SideBar" />
@@ -37,6 +38,7 @@ import Favicon from '../components/Favicon.astro';
             </div>
             <div class="mt-6 mb-4">
             <slot name="Footer" />
+            <CookieBanner client:idle/>   
             </div>
 
     </main>
