@@ -1,15 +1,15 @@
 {
     "home": {
         "en": {
-            "title": "The English Nook • Private English Lessons & Translation",
+            "title": "The English Nook | Private English Lessons & Translation",
             "description": "Private, online English lessons (A1-C2) for all ages with a CELTA-qualified ESL teacher in Switzerland • Translation & proofreading (French/German into English)"
         },
         "de": {
-            "title": "The English Nook • Privater Englischunterricht & Übersetzung",
+            "title": "The English Nook | Privater Englischunterricht & Übersetzung",
             "description": "Online-Englischunterricht (A1-C2) für jedes Alter mit CELTA-qualifizierter ESL-Lehrerin in der Schweiz • Übersetzung/Korrekturlesen (Französ./Deutsch-Englisch)"
         },
         "fr": {
-            "title": "The English Nook • Leçons d'anglais privées et traduction",
+            "title": "The English Nook | Leçons d'anglais privées et traduction",
             "description": "Leçons d'anglais privées en ligne (A1-C2) pour tous les âges avec enseignante ESL diplômée CELTA en Suisse • Traduction et relecture (français/allemand-anglais)"
         }
     },
@@ -19,67 +19,67 @@
             "description": "Customisable private, semi-private and small group online lessons with a CELTA-qualified ESL teacher • Exam preparation (Cambridge English, IELTS, TOEFL Young Learners and more)"
         },
         "de": {
-            "title": "The English Nook • Kursangebote • Online-Englischunterricht",
+            "title": "The English Nook | Kursangebote • Online-Englischunterricht",
             "description": "Individuell gestaltbarer Privat-/Halbprivat-/Kleingruppen-Onlineunterricht mit CELTA-qualifizierter ESL-Lehrerin • Examensvorbereitung (Cambridge, IELTS, TOEFL)"
         },
         "fr": {
-            "title": "The English Nook • Offres de cours • Leçons d'anglais en ligne",
+            "title": "The English Nook | Offres de cours • Leçons d'anglais en ligne",
             "description": "Leçons en ligne sur mesure (privées/semi-privées/en groupes) avec enseignante ESL diplômée CELTA • Préparation aux examens (Cambridge, IELTS, TOEFL et plus)"
         }
     },
     "translation": {
         "en": {
-            "title": "The English Nook • Translation & Proofreading • French | German",
+            "title": "The English Nook | Translation & Proofreading • French | German",
             "description": "Translation of general and specialised texts from French & German into English • Proofreading by a native speaker • Grammar, punctuation, spelling and syntax"
         },
         "de": {
-            "title": "The English Nook • Übersetzung & Korrekturlesen • FR | DE",
+            "title": "The English Nook | Übersetzung & Korrekturlesen • FR | DE",
             "description": "Übersetzung allgemeiner/fachlicher Texte (Französisch/Deutsch-Englisch) • Korrekturlesen durch Muttersprachlerin • Grammatik, Zeichensetzung, Rechtsch. & Syntax"
         },
         "fr": {
-            "title": "The English Nook • Traduction et relecture • Français | Allemand",
+            "title": "The English Nook | Traduction et relecture • Français | Allemand",
             "description": "Traduction de textes généraux et spécialisés (français/allemand-anglais) • Relecture par un locutrice native • Grammaire, ponctuation, orthographe et syntaxe"
         }
     },
     "reviews":{
         "en": {
-            "title":"",
-            "description":""
+            "title":"The English Nook | Testimonials",
+            "description":"What others say about The English Nook's teaching, translation and proofreading services."
         },
         "de": {
-            "title":"",
-            "description":""
+            "title":"The English Nook | Referenzen",
+            "description":"Was andere über die Lehr-, Übersetzungs- und Korrekturlesedienstleistungen bei The English Nook sagen."
         },
         "fr": {
-            "title":"",
-            "description":""
+            "title":"The English Nook | Témoignages",
+            "description":"Ce que disent les autres sur les services d'enseignement, de traduction et de relecture chez The English Nook."
         }
     },
     "about": {
         "en": {
-            "title": "The English Nook • About",
+            "title": "The English Nook | About",
             "description": "CELTA-qualified ESL teacher & translator/proofreader (French & German into English) • American & British English • Based in Switzerland • Clients worldwide"
         },
         "de": {
-            "title": "The English Nook • Über mich",
+            "title": "The English Nook | Über mich",
             "description": "CELTA-qualifizierte ESL-Lehrerin & Übersetzerin/Korrekturleserin (Französ./Deutsch-Englisch) • Amerikan./Britisches Englisch • In der Schweiz • Kunden weltweit"
         },
         "fr": {
-            "title": "The English Nook • Qui suis-je",
+            "title": "The English Nook | Qui suis-je",
             "description": "Enseignante ESL diplômée CELTA & traductrice/relectrice (français/allemand-anglais) • Anglais américain/britannique • Située en Suisse • Clients du monde entier"
         }
     },
     "contact": {
         "en": {
-            "title": "The English Nook • Contact",
+            "title": "The English Nook | Contact",
             "description": "Interested in private, online English lessons or the translation/proofreading of a text? Contact me at info@theenglishnook.ch, or reserve a free consultation."
         },
         "de": {
-            "title": "The English Nook • Kontakt",
+            "title": "The English Nook | Kontakt",
             "description": "Online-Englischunterricht oder Übersetzung/Korrekturlesen? Kontaktieren Sie mich (info@theenglishnook.ch) oder reservieren Sie ein kostenloses Beratungsgespräch"
         },
         "fr": {
-            "title": "The English Nook • Contactez-moi",
+            "title": "The English Nook | Contactez-moi",
             "description": "Intéressé(e) par des leçons d'anglais privées en ligne ou la traduction/relecture? Contactez-moi à info@theenglishnook.ch, ou réservez une consultation gratuite"
         }
     },
@@ -127,15 +127,15 @@
     },
     "404": {
         "en": {
-            "title":"The English Nook • 404",
+            "title":"The English Nook | 404",
             "description": "EN"
         },
         "de": {
-            "title":"The English Nook • 404",
+            "title":"The English Nook | 404",
             "description": "DE"
         },
         "fr": {
-            "title":"The English Nook • 404",
+            "title":"The English Nook | 404",
             "description": "FR"
         }
     }
