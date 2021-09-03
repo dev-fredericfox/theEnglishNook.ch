@@ -53,18 +53,18 @@
     "reviews": {
         "en": {
             "link": "EN",
-            "route": "/reviews",
-            "name": "Reviews"
+            "route": "/testimonials",
+            "name": "Testimonials"
         },
         "de": {
             "link"  : "DE",
-            "route" : "/de/rezensionen",
-            "name"  : "Rezensionen"
+            "route" : "/de/referenzen",
+            "name"  : "Referenzen"
         },
         "fr": {
             "link"  : "FR",
-            "route" : "/fr/commentaires",
-            "name"  :"Commentaires"
+            "route" : "/fr/temoignages",
+            "name"  :"Témoignages"
         }
     },
     "about": {

@@ -5,14 +5,12 @@ import Home from '../components/Home.astro';
 import NavBar from '../components/NavBar.astro';
 import SideBar from '../components/SideBar.astro';
 import Footer from '../components/Footer.astro';
-import CookieBanner from '../components/CookieBanner.vue';
 ---
 
 <HomeLayout>
     <NavBar slot="NavBar" lang="en" location="home"/>
     <MetaSEO slot="MetaSEO" lang="en" location="about"/>
-    <SideBar slot="SideBar" lang="en"/>
-    <CookieBanner slot="Main" client:visible/>        
+    <SideBar slot="SideBar" lang="en"/>   
     <Footer slot="Footer" lang="en"/>   
 
 </HomeLayout>
