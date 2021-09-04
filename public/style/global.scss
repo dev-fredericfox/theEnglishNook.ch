@@ -112,6 +112,10 @@ img.active {
   line-height: 1em;
 }
 
+.inherit-m-0 * {
+  margin: 0!important;
+}
+
 // @media (prefers-color-scheme: dark) {
 //   body {
 //     background: #111827;
