@@ -14,7 +14,7 @@ echo 'www.theenglishnook.ch' > CNAME
 
 git add -A
 git commit -m 'R.v.1.0.2: CSS Bug Fixes'
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages --force
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
