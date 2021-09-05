@@ -13,7 +13,7 @@ touch ./dist/.nojekyll
 echo 'www.theenglishnook.ch' > CNAME
 
 git add -A
-git commit -m 'deploy'
+git commit -m 'R.v.1.0.2: CSS Bug Fixes'
 git subtree push --prefix dist origin gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io

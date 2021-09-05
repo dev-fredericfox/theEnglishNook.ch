@@ -70,6 +70,10 @@ body {
   line-height: 0.75;
 }
 
+li > .is-active {
+  display: inline-block!important;
+}
+
 .langswitcher {
   background-color: rgba(192, 64, 0, 0.3);
 }
