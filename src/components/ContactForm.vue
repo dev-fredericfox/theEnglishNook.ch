@@ -206,7 +206,7 @@ export default {
       try {
         console.log(postReqSettings);
         const response = await fetch(
-          "https://us-central1-form-forwarder-v1.cloudfunctions.net/app/test",
+          "https://us-central1-form-forwarder-v1.cloudfunctions.net/app/infoattheenglishnookch",
           postReqSettings
         );
         console.dir(response);
