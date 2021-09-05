@@ -1,4 +1,18 @@
 {
+    "404": {
+        "en": {
+            "title": "The English Nook | 404",
+            "description": "EN"
+        },
+        "de": {
+            "title": "The English Nook | 404",
+            "description": "DE"
+        },
+        "fr": {
+            "title": "The English Nook | 404",
+            "description": "FR"
+        }
+    },
     "home": {
         "en": {
             "title": "The English Nook | Private English Lessons & Translation",
@@ -41,18 +55,18 @@
             "description": "Traduction de textes généraux et spécialisés (français/allemand-anglais) • Relecture par un locutrice native • Grammaire, ponctuation, orthographe et syntaxe"
         }
     },
-    "reviews":{
+    "reviews": {
         "en": {
-            "title":"The English Nook | Testimonials",
-            "description":"What others say about The English Nook's teaching, translation and proofreading services."
+            "title": "The English Nook | Testimonials",
+            "description": "What others say about The English Nook's teaching, translation and proofreading services."
         },
         "de": {
-            "title":"The English Nook | Referenzen",
-            "description":"Was andere über die Lehr-, Übersetzungs- und Korrekturlesedienstleistungen bei The English Nook sagen."
+            "title": "The English Nook | Referenzen",
+            "description": "Was andere über die Lehr-, Übersetzungs- und Korrekturlesedienstleistungen bei The English Nook sagen."
         },
         "fr": {
-            "title":"The English Nook | Témoignages",
-            "description":"Ce que disent les autres sur les services d'enseignement, de traduction et de relecture chez The English Nook."
+            "title": "The English Nook | Témoignages",
+            "description": "Ce que disent les autres sur les services d'enseignement, de traduction et de relecture chez The English Nook."
         }
     },
     "about": {
@@ -83,59 +97,59 @@
             "description": "Intéressé(e) par des leçons d'anglais privées en ligne ou la traduction/relecture? Contactez-moi à info@theenglishnook.ch, ou réservez une consultation gratuite"
         }
     },
-    "imprint": {
+    "consultation": {
         "en": {
-            "title":"",
+            "title": "dsd",
             "description": "EN"
         },
         "de": {
-            "title":"",
+            "title": "dsd",
             "description": "DE"
         },
         "fr": {
-            "title":"",
+            "title": "dsd",
+            "description": "FR"
+        }
+    },
+    "imprint": {
+        "en": {
+            "title": "",
+            "description": "EN"
+        },
+        "de": {
+            "title": "",
+            "description": "DE"
+        },
+        "fr": {
+            "title": "",
             "description": "FR"
         }
     },
     "tc": {
         "en": {
-            "title":"",
+            "title": "",
             "description": "EN"
         },
         "de": {
-            "title":"",
+            "title": "",
             "description": "DE"
         },
         "fr": {
-            "title":"",
+            "title": "",
             "description": "FR"
         }
     },
     "privacy": {
         "en": {
-            "title":"",
+            "title": "",
             "description": "EN"
         },
         "de": {
-            "title":"",
+            "title": "",
             "description": "DE"
         },
         "fr": {
-            "title":"",
-            "description": "FR"
-        }
-    },
-    "404": {
-        "en": {
-            "title":"The English Nook | 404",
-            "description": "EN"
-        },
-        "de": {
-            "title":"The English Nook | 404",
-            "description": "DE"
-        },
-        "fr": {
-            "title":"The English Nook | 404",
+            "title": "",
             "description": "FR"
         }
     }

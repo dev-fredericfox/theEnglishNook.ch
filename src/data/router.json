@@ -101,6 +101,23 @@
             "name"  : "Contactez-moi"
         }
     },
+    "consultation": {
+        "en": {
+            "link"  : "EN",
+            "route" : "/book-consultation",
+            "name"  : "Book a Consultation"
+        },
+        "de": {
+            "link"  : "DE",
+            "route" : "book-consultation",
+            "name"  : "Beratung Buchen"
+        },
+        "fr": {
+            "link"  : "FR",
+            "route" : "/book-consultation",
+            "name"  : "Réserver une consultation"
+        }
+    },
     "imprint": {
         "en": {
             "link"  : "EN",
