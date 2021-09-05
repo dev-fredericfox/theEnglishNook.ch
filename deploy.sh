@@ -12,7 +12,7 @@ touch ./dist/.nojekyll
 # if you are deploying to a custom domain
 echo 'www.theenglishnook.ch' > CNAME
 
-cd dist
+cd ./dist
 git add --all
 git commit -m "Deploy to gh-pages"
 git push origin gh-pages
