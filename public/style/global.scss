@@ -66,6 +66,11 @@ body {
   margin-right:5px;
 }
 
+li > .is-active {
+  display: inline-block;
+}
+
+
 .mobile-sidebar .menu-list {
   line-height: 0.75;
 }
