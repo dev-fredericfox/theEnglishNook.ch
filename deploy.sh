@@ -12,9 +12,10 @@ touch ./dist/.nojekyll
 # if you are deploying to a custom domain
 echo 'www.theenglishnook.ch' > CNAME
 
-git add -A
-git commit -m 'R.v.1.0.2: CSS Bug Fixes'
-git subtree push --prefix dist origin gh-pages --force
+cd dist
+git add --all
+git commit -m "Deploy to gh-pages"
+git push origin gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
@@ -23,3 +24,4 @@ git subtree push --prefix dist origin gh-pages --force
 # git push -f git@github.com:dev-fredericfox/theEnglishNook.ch.git main:gh-pages
 
 cd -
+rm -rf dist
