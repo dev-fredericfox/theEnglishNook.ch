@@ -25,3 +25,5 @@ Components are multilingual and display the right language according to the lang
 Example `src/pages/de/kontakt.astro` calles `<Contact slot="Main" lang="de"/>` and `src/pages/contact.astro` calls `<Contact slot="Main" lang="en"/>`
 
 The SideBar and the language selector (NavBar.astro) both import `src/data/router.json` for all link information. In order for the language selector to route to the corresponding page in other languages we pass in the current location to the slot of page.  Example: `src/pages/de/kontakt.astro` calles `<NavBar slot="NavBar" lang="de" location="contact"/>` the contact.astro component used the `location=contact` information to match the right routes in the other languages.
+
+## To Do
