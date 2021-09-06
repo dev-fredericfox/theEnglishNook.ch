@@ -7,7 +7,7 @@
       @scroll.prevent
       >
         <div class="modal-background"></div>
-        <div class="modal-card has-text-centered">
+        <div class="modal-card has-text-centere ml-0 mt-6">
           <header class="modal-card-head">
             <h2 class="modal-card-title">{{ browserlanguage.header }}</h2>
           </header>
