@@ -16,13 +16,17 @@ touch .nojekyll
 echo 'www.theenglishnook.ch' > CNAME
 
 git init
+git remote add origin https://github.com/dev-fredericfox/theEnglishNook.ch.git
 git add -A
 git commit -m 'deploy'
+git branch gh-pages
+git checkout gh-pages
+git push origin gh-pages -f
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:dev-fredericfox/theEnglishNook.ch.git main:gh-pages
+# git push -f git@github.com:dev-fredericfox/theEnglishNook.ch.git main:gh-pages
 
 cd -
