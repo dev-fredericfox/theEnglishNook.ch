@@ -141,7 +141,7 @@ export default {
         required: "Required",
         error: "Oh no! Please try again.",
         success: "Your message was successfully sent!",
-        button: "Send"
+        button: "Send",
       },
       de: {
         fname: "Vorname",
@@ -152,7 +152,7 @@ export default {
         required: "Bitte füllen Sie dieses Feld aus",
         error: "Oh nein! Bitte, versuchen Sie es noch mal.",
         success: "Ihre Nachricht wurde erfolgreich abgeschickt!",
-        button: "Abschicken"
+        button: "Abschicken",
       },
       fr: {
         fname: "Prénom",
@@ -163,7 +163,7 @@ export default {
         required: "Veuillez remplir ce champ",
         error: "Oh non! Réessayez, s'il vous plaît.",
         success: "Votre message a été envoyé avec succès!",
-        button: "Envoyer"
+        button: "Envoyer",
       },
     };
     //VARIABLES
@@ -201,7 +201,7 @@ export default {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ username: "xyz" }),
+        body: JSON.stringify({ fname: form.value.fname, lname: form.value.lname, subject: form.value.subject, email: form.value.email, message: form.value.message }),
       };
       try {
         console.log(postReqSettings);
