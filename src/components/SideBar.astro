@@ -8,7 +8,7 @@ const sideBar = Object.keys(router).filter(fil => fil != "imprint" && fil != "tc
 <aside class="menu">
   <ul class="menu-list">
     {sideBar.map(el => (
-      el == location ? <li class="sideBar"><img class="feather active"src="/favicon.svg"><a class="is-active" href={router[el][lang].route}>{router[el][lang].name}</a></li> : <li class="sidebar"><img class="feather inactive"src="/favicon.svg"><a href={router[el][lang].route}>{router[el][lang].name}</a></li>
+      el == location ? <li class="sideBar"><img class="feather active"src="/favicon.svg" alt="The English Nook Feather"><a class="is-active" href={router[el][lang].route}>{router[el][lang].name}</a></li> : <li class="sidebar"><img class="feather inactive"src="/favicon.svg" alt="The English Nook Feather"><a href={router[el][lang].route}>{router[el][lang].name}</a></li>
     ))}
   </ul>
 </aside>
