@@ -105,12 +105,12 @@
         "en": {
             "link"  : "EN",
             "route" : "/book-consultation",
-            "name"  : "Book a Consultation"
+            "name"  : "Reserve a Consultation"
         },
         "de": {
             "link"  : "DE",
             "route" : "book-consultation",
-            "name"  : "Beratung Buchen"
+            "name"  : "Erstgespräch reservieren"
         },
         "fr": {
             "link"  : "FR",

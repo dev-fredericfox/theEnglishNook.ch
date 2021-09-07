@@ -99,15 +99,15 @@
     },
     "consultation": {
         "en": {
-            "title": "Book a consultation",
+            "title": "The English Nook | Reserve a consultation",
             "description": "Interested in private, online English lessons or the translation/proofreading of a text? Reserve a free consultation."
         },
         "de": {
-            "title": "Beratung buchen",
-            "description": "Online-Englischunterricht oder Übersetzung/Korrekturlesen? Reservieren Sie ein kostenloses Beratungsgespräch!"
+            "title": "The English Nook | Erstgespräch reservieren",
+            "description": "Online-Englischunterricht oder Übersetzung/Korrekturlesen? Reservieren Sie ein kostenloses Erstgespräch."
         },
         "fr": {
-            "title": "Réserver une consultation",
+            "title": "The English Nook | Réserver une consultation",
             "description": "Intéressé(e) par des leçons d'anglais privées en ligne ou la traduction/relecture? Réservez une consultation gratuite!"
         }
     },
