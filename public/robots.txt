@@ -1,1 +1,6 @@
 User-agent: *
+disallow: /book-consultation
+disallow: /fr/reserver-une-consultation
+disallow: /de/erstgespraech-reservieren
+
+sitemap: https://www.theenglishnook.ch/sitemap.xml

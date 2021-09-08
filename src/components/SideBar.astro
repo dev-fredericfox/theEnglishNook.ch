@@ -2,7 +2,7 @@
 import router from '../data/router.json';
 
 const {lang, location} = Astro.props
-const sideBar = Object.keys(router).filter(fil => fil != "imprint" && fil != "tc" && fil != "privacy")
+const sideBar = Object.keys(router).filter(fil => fil != "imprint" && fil != "tc" && fil != "privacy" && fil != "consultation")
 ---
 
 <aside class="menu">
