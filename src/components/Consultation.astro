@@ -4,17 +4,20 @@ const translatedContent = {
     en : {
             title       : 'Book a Consultation', 
             body        : ["Would you prefer to speak with me in person?",
-                          "Reserve a free 15-minute initial consultation, or contact me directly if you do not find a suitable appointment time.",]
+                          "Reserve a free 15-minute initial consultation, or contact me directly if you do not find a suitable appointment time.",],
+            calLink     : "https://calendly.com/theenglishnook-ch/initial_consultation"
             },
     de : {
             title       : 'Beratung Buchen', 
             body        : ["Möchten Sie lieber persönlich mit mir sprechen?",
-                        "Reservieren Sie ein kostenloses, 15-minütiges Erstgespräch, oder kontaktieren Sie mich direkt, wenn Sie keinen passenden Termin finden.",]
+                        "Reservieren Sie ein kostenloses, 15-minütiges Erstgespräch, oder kontaktieren Sie mich direkt, wenn Sie keinen passenden Termin finden.",],
+            calLink     : "https://calendly.com/theenglishnook-ch/initial_consultation"
             },
     fr : {
             title       : "Réserver une consultation", 
             body        : ["Préféreriez-vous parler avec moi en personne ?",
-                          "Réservez une consultation initiale gratuite de 15 minutes, ou contactez-moi directement si vous ne trouvez pas de rendez-vous convenable."]
+                          "Réservez une consultation initiale gratuite de 15 minutes, ou contactez-moi directement si vous ne trouvez pas de rendez-vous convenable."],
+            calLink     : "https://calendly.com/theenglishnook-ch/initial_consultation"
             },
     }
 
@@ -29,6 +32,6 @@ let currentLanguage = translatedContent[lang]
 ))}
 </div>
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/theenglishnook-ch/initial_consultation?background_color=ffffc2&primary_color=c04000"></div>
+<div class="calendly-inline-widget" data-url={currentLanguage.calLink}></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->

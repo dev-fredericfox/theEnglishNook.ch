@@ -109,12 +109,12 @@
         },
         "de": {
             "link"  : "DE",
-            "route" : "book-consultation",
+            "route" : "/de/erstgespraech-reservieren",
             "name"  : "Erstgespräch reservieren"
         },
         "fr": {
             "link"  : "FR",
-            "route" : "/book-consultation",
+            "route" : "/fr/reserver-une-consultation",
             "name"  : "Réserver une consultation"
         }
     },

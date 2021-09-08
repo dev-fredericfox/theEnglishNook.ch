@@ -1,0 +1,21 @@
+---
+import HomeLayout from '../../layouts/HomeLayout.astro';
+import MetaSEO from '../../components/MetaSEO.astro';
+import Consultation from '../../components/Consultation.astro';
+import NavBar from '../../components/NavBar.astro';
+import SideBar from '../../components/SideBar.astro';
+import Footer from '../../components/Footer.astro';
+const nav = {
+    lang: "de",
+    loc: "consultation"
+}
+---
+
+<HomeLayout>
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/>
+    <MetaSEO slot="MetaSEO" lang={nav.lang} location={nav.loc}/>
+    <SideBar slot="SideBar" lang={nav.lang} location={nav.loc}/>        
+    <Consultation slot="Main" lang={nav.lang} client:visible/>
+    <Footer slot="Footer" lang={nav.lang}/>   
+
+</HomeLayout>
