@@ -5,7 +5,7 @@ const {lang,location} = Astro.props
 let allLang = router[location]
 ---
 <div class="langswitcher columns mb-5 is-flex-direction-row-reverse">
-<div class="column is-1 is-hidden-mobile"></div>
+<div class="column is-1-tablet is-2-desktop is-3-widescreen is-hidden-mobile"></div>
 <div class="column pt-5 is-3 has-text-right mr-3">
       {Object.keys(allLang).map((el,idx) => (
          <span><a href={allLang[el].route}>{el == lang ? <span class="brand-red p-1"><b>{allLang[el].link}</b></span> : <span class="brand-black p-1">{allLang[el].link}</span>}</a>{idx == 2 ? "" :" | "}</span>
