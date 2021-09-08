@@ -67,10 +67,6 @@ body {
   margin-right:5px;
 }
 
-.mobile-sidebar .menu-list {
-  line-height: 0.97;
-}
-
 .is-active {
   display: inline-block!important;
 }
@@ -128,6 +124,11 @@ img.active {
 
 
 @media only screen and (max-width: 768px) {
+.sidebar {
+    padding: 4px!important;
+  }
+
+
   .calendly-inline-widget {
     min-width:340px;
     height:830px;
