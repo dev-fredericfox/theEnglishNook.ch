@@ -1,5 +1,6 @@
 ---
 import LegalLayout from '../layouts/LegalLayout.astro';
+import MetaSEO from '../components/MetaSEO.astro';
 import Privacy from '../components/Privacy.astro'
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
@@ -10,7 +11,6 @@ const nav = {
 ---
 
 <LegalLayout>
-<title slot="headerInfo">Protection des donnees</title>
     <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/> 
     <Privacy slot="Main"/>
     <Footer slot="Footer" lang={nav.lang}/>   

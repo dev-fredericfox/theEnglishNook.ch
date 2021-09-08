@@ -113,30 +113,30 @@
     },
     "imprint": {
         "en": {
-            "title": "",
-            "description": "EN"
+            "title": "The English Nook | Terms & Conditions",
+            "description": "Terms & Conditions"
         },
         "de": {
-            "title": "",
-            "description": "DE"
+            "title": "The English Nook | AGB",
+            "description": "AGB"
         },
         "fr": {
-            "title": "",
-            "description": "FR"
+            "title": "The English Nook | CGV",
+            "description": "CGV"
         }
     },
     "tc": {
         "en": {
-            "title": "",
-            "description": "EN"
+            "title": "The English Nook | Terms & Conditions",
+            "description": "Terms & Conditions"
         },
         "de": {
-            "title": "",
-            "description": "DE"
+            "title": "The English Nook | AGB",
+            "description": "AGB"
         },
         "fr": {
-            "title": "",
-            "description": "FR"
+            "title": "The English Nook | Conditions générales",
+            "description": "Conditions générales"
         }
     },
     "privacy": {

@@ -3,12 +3,15 @@ import LegalLayout from '../../layouts/LegalLayout.astro';
 import Imprint from '../../components/Imprint.astro';
 import NavBar from '../../components/NavBar.astro';
 import Footer from '../../components/Footer.astro';
+const nav = {
+    lang: "de",
+    loc: "imprint"
+}
 ---
 
 <LegalLayout>
-<title slot="headerInfo">Impressum</title>
-    <NavBar slot="NavBar" lang="de" location="imprint"/> 
-    <Imprint slot="Main" lang="de"/>
-    <Footer slot="Footer" lang="de"/>   
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/> 
+    <Imprint slot="Main" lang={nav.lang}/>
+    <Footer slot="Footer" lang={nav.lang}/>   
 
 </LegalLayout>

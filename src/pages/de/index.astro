@@ -5,13 +5,17 @@ import Home from '../../components/Home.astro';
 import NavBar from '../../components/NavBar.astro';
 import SideBar from '../../components/SideBar.astro';
 import Footer from '../../components/Footer.astro';
+const nav = {
+    lang: "de",
+    loc: "home"
+}
 ---
 
 <HomeLayout>
-<title slot="headerInfo">Willkommen</title>
-    <NavBar slot="NavBar" lang="de" location="home"/>
-    <MetaSEO slot="MetaSEO" lang="de" location="home"/>
-    <SideBar slot="SideBar" lang="de" location="home"/>        
-    <Home slot="Main" lang="de"/>
-    <Footer slot="Footer" lang="de"/>   
+    <MetaSEO slot="MetaSEO" lang={nav.lang} location={nav.loc}/>
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/>
+    <SideBar slot="SideBar" lang={nav.lang} location={nav.loc}/>        
+    <Home slot="Main" lang={nav.lang}/>
+    <Footer slot="Footer" lang={nav.lang}/>   
+
 </HomeLayout>

@@ -6,15 +6,18 @@ import ContactForm from '../../components/ContactForm.vue';
 import NavBar from '../../components/NavBar.astro';
 import SideBar from '../../components/SideBar.astro';
 import Footer from '../../components/Footer.astro';
+const nav = {
+    lang: "fr",
+    loc: "contact"
+}
 ---
 
 <HomeLayout>
-<title slot="headerInfo">Bienvenue</title>
-    <NavBar slot="NavBar" lang="fr" location="contact"/>
-    <MetaSEO slot="MetaSEO" lang="fr" location="contact"/>
-    <SideBar slot="SideBar" lang="fr" location="contact"/>        
-    <Contact slot="Main" lang="fr"/>
-    <ContactForm slot="Main" lang="fr" client:visible/>
-    <Footer slot="Footer" lang="fr"/>   
+    <MetaSEO slot="MetaSEO" lang={nav.lang} location={nav.loc}/>
+    <NavBar slot="NavBar" lang={nav.lang} location={nav.loc}/>
+    <SideBar slot="SideBar" lang={nav.lang} location={nav.loc}/>        
+    <Contact slot="Main" lang={nav.lang}/>
+    <ContactForm slot="Main" lang={nav.lang} client:idle/>
+    <Footer slot="Footer" lang={nav.lang}/>   
 
 </HomeLayout>
