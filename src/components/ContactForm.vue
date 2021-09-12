@@ -157,7 +157,7 @@ export default {
       fr: {
         fname: "Prénom",
         lname: "Nom",
-        email: "E-Mail",
+        email: "E-mail",
         subj: "Sujet",
         body: "Comment puis-je vous aider…?",
         required: "Veuillez remplir ce champ",
