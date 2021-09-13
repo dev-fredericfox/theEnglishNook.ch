@@ -3,53 +3,122 @@ const {lang, category} = Astro.props
 const translatedContent = {
     teaching: [
         {
-            testimonial: "\"Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone, the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\"",
-            author: "Upwork Client (Level: B2)",
-            country: "Belgium",
-            date: "January 2021"
+            en:{
+                testimonial: "\"Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone, the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\"",
+                author: "Upwork Client (Level: B2)",
+                country: "Belgium",
+                date: "January 2021"
+            },
+            de:{
+                testimonial: "\„Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone, the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\“",
+                author: "Upwork Kunde (Level: B2)",
+                country: "Belgien",
+                date: "Januar 2021"
+            },
+            fr:{
+                testimonial: "\«Simone is one of the very best Upwork freelancer among all people I have ever worked with. For Simone, the job is always the most important thing to do. Her performance as my English teacher was golden. Energetic and broad-minded teacher - that's her! Detail oriented. She is very positive attitude towards work. I definitely recommend Simone.\»",
+                author: "Client d'Upwork (Level: B2)",
+                country: "Belgique",
+                date: "Janvier 2021"
+            },
         },
         {
-            testimonial: "\"[Simone's] dedicated and energetic personality alongside her observant, patient and caring nature make her stand out as a English teacher.\"",
-            author: "Head of <i>New Speakeasy</i>",
-            country: "Italy",
-            date: "August 2021"
+            en:{
+                testimonial: "\"[Simone's] dedicated and energetic personality alongside her observant, patient and caring nature make her stand out as an English teacher.\"",
+                author: "Head of <i>New Speakeasy</i>",
+                country: "Italy",
+                date: "August 2021"
+            },
+            de:{
+                testimonial: "\„[Simone's] dedicated and energetic personality alongside her observant, patient and caring nature make her stand out an a English teacher.\“",
+                author: "Head of <i>New Speakeasy</i>",
+                country: "Italien",
+                date: "August 2021"
+            },
+            fr:{
+                testimonial: "\«[Simone's] dedicated and energetic personality alongside her observant, patient and caring nature make her stand out an a English teacher.\"",
+                author: "Head of <i>New Speakeasy</i>",
+                country: "Italie",
+                date: "Août 2021"
+            },
         },{
-            testimonial: "\"Her thoughtful, open-minded and conscientious character [stood] out since the beginning [of her CELTA training], and she never [ceased] to evince a clear and admirable commitment to helping others in every aspect of their English endeavours.\"",
-            author: "CELTA Course Director",
-            country: "Spain",
-            date: "July 2021"
-
+            en:{
+                testimonial: "\"Her thoughtful, open-minded and conscientious character [stood] out since the beginning [of her CELTA training], and she never [ceased] to evince a clear and admirable commitment to helping others in every aspect of their English endeavours.\"",
+                author: "CELTA Course Director",
+                country: "Spain",
+                date: "July 2021"
+            },
+            de:{
+                testimonial: "\„Her thoughtful, open-minded and conscientious character [stood] out since the beginning [of her CELTA training], and she never [ceased] to evince a clear and admirable commitment to helping others in every aspect of their English endeavours.\“",
+                author: "CELTA Kurs Direktor",
+                country: "Spanien",
+                date: "Juli 2021"
+            },
+            fr:{
+                testimonial: "\«Her thoughtful, open-minded and conscientious character [stood] out since the beginning [of her CELTA training], and she never [ceased] to evince a clear and admirable commitment to helping others in every aspect of their English endeavours.\»",
+                author: "CELTA Course Director",
+                country: "Espagne",
+                date: "Juillet 2021"
+            },
         }
     ],
     translation: [
         {
-            testimonial: "\"Simone is assiduous, dependable and sincerely dedicated to her work - not only are her translations characterised by precision and a conscientious attention to detail, but her work ethic as a whole also reflects her diligent, inquisitive nature and her keen willingness to take on tasks regardless of their difficulty.\"",
-            author: "Co-founder of <i>BF International Foods GmbH</i>",
-            country: "Germany",
-            date: "October 2020"
+            en:{
+                testimonial: "\"Simone is assiduous, dependable and sincerely dedicated to her work - not only are her translations characterised by precision and a conscientious attention to detail, but her work ethic as a whole also reflects her diligent, inquisitive nature and her keen willingness to take on tasks regardless of their difficulty.\"",
+                author: "Co-founder of <i>BF International Foods GmbH</i>",
+                country: "Germany",
+                date: "October 2020"
+            },
+            de:{
+                testimonial: "\„Simone is assiduous, dependable and sincerely dedicated to her work - not only are her translations characterised by precision and a conscientious attention to detail, but her work ethic as a whole also reflects her diligent, inquisitive nature and her keen willingness to take on tasks regardless of their difficulty.\“",
+                author: "Gründer <i>BF International Foods GmbH</i>",
+                country: "Deutschland",
+                date: "Oktober 2020"
+            },
+            fr:{
+                testimonial: "\«Simone is assiduous, dependable and sincerely dedicated to her work - not only are her translations characterised by precision and a conscientious attention to detail, but her work ethic as a whole also reflects her diligent, inquisitive nature and her keen willingness to take on tasks regardless of their difficulty.\»",
+                author: "Co-foundateur de <i>BF International Foods GmbH</i>",
+                country: "Allemagne",
+                date: "Octobre 2020"
+            },
         },
         {
-            testimonial: "\"Simone did a careful job with [colloquial terms from the 1940s, a lot of vocabulary related to historical conditions in France...and a particular voice of the narrator], meticulously including footnotes for terms that need glossing [...] I’ve no doubt [she] will provide many excellent translations.\"",
-            author: "Researcher at the <i>JFCS Holocaust Center and Tauber Holocaust Library</i>",
-            country: "California",
-            date: "April 2016"
+            en:{
+                testimonial: "\"Simone did a careful job with [colloquial terms from the 1940s, a lot of vocabulary related to historical conditions in France...and a particular voice of the narrator], meticulously including footnotes for terms that need glossing [...] I’ve no doubt [she] will provide many excellent translations.\"",
+                author: "Researcher at the <i>JFCS Holocaust Center and Tauber Holocaust Library</i>",
+                country: "California",
+                date: "April 2016"
+            },
+            de:{
+                testimonial: "\„Simone did a careful job with [colloquial terms from the 1940s, a lot of vocabulary related to historical conditions in France...and a particular voice of the narrator], meticulously including footnotes for terms that need glossing [...] I’ve no doubt [she] will provide many excellent translations.\“",
+                author: "Researcher at the <i>JFCS Holocaust Center and Tauber Holocaust Library</i>",
+                country: "Kalifornien",
+                date: "April 2016"
+            },
+            fr:{
+                testimonial: "\«Simone did a careful job with [colloquial terms from the 1940s, a lot of vocabulary related to historical conditions in France...and a particular voice of the narrator], meticulously including footnotes for terms that need glossing [...] I’ve no doubt [she] will provide many excellent translations.\»",
+                author: "Researcher at the <i>JFCS Holocaust Center and Tauber Holocaust Library</i>",
+                country: "Californie",
+                date: "Avril 2016"
+            },
         }
     ],
     titles: {
             en: {
                 title: "Testimonials",
                 teaching: "Teaching",
-                translation: "Translation <span class=\"brand-black\">& </span>Proofreading (French/German into English)"
+                translation: "Translation <span class=\"brand-black\">& </span>Proofreading<br><span class=\"brand-black\">(French/German into English)</span>"
             },
             de:  {
                 title: "Referenzen",
                 teaching: "Unterricht",
-                translation: "Übersetzung <span class=\"brand-black\">& </span> Korrekturlesen (Französisch/Deutsch ins Englische)"
+                translation: "Übersetzung <span class=\"brand-black\">& </span> Korrekturlesen<br><span class=\"brand-black\">(Französisch/Deutsch ins Englische)</span>"
             },
             fr:  {
                 title: "Témoignages",
                 teaching: "Enseignement",
-                translation: "Traduction <span class=\"brand-black\">& </span> relecture (français/allemand vers l'anglais)"
+                translation: "Traduction <span class=\"brand-black\">& </span> relecture<br><span class=\"brand-black\">(Français/Allemand vers l'anglais)</span>"
             },
     }
 }
@@ -61,10 +130,10 @@ const translatedContent = {
 <div>
 {translatedContent["teaching"].map(el => (
     <div>
-    <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
-    <p class="line-height-1 mt-0 mb-0"><b>{el.author}</b></p>
-    <p class="line-height-1 mt-0 mb-0">{el.country}</p>
-    <p class="line-height-1 mt-0 mb-5">{el.date}</p>
+    <p class="mt-0 mb-2"><i>{el[lang].testimonial}</i></p>
+    <p class="line-height-1 mt-0 mb-0"><b>{el[lang].author}</b></p>
+    <p class="line-height-1 mt-0 mb-0">{el[lang].country}</p>
+    <p class="line-height-1 mt-0 mb-5">{el[lang].date}</p>
     </div>
     ))}
 </div>
@@ -73,10 +142,10 @@ const translatedContent = {
 <div>
 {translatedContent["translation"].map(el => (
     <div>
-    <p class="mt-0 mb-2"><i>{el.testimonial}</i></p>
-    <p class="line-height-1 mt-0 mb-0"><b>{el.author}</b></p>
-    <p class="line-height-1 mt-0 mb-0">{el.country}</p>
-    <p class="line-height-1 mt-0 mb-5">{el.date}</p>
+    <p class="mt-0 mb-2"><i>{el[lang].testimonial}</i></p>
+    <p class="line-height-1 mt-0 mb-0"><b>{el[lang].author}</b></p>
+    <p class="line-height-1 mt-0 mb-0">{el[lang].country}</p>
+    <p class="line-height-1 mt-0 mb-5">{el[lang].date}</p>
     </div>
     ))}
 </div>
