@@ -9,7 +9,7 @@
         <div class="modal-background"></div>
         <div class="modal-card has-text-centered mt-6">
           <header class="modal-card-head">
-            <h2 class="modal-card-title">{{ browserlanguage.header }}</h2>
+            <h2 class="modal-card-title">{{ browserlanguage.header }} <span class="brand-red"><i>The English Nook</i></span></h2>
           </header>
           <section class="modal-card-body">
             <div>
@@ -60,7 +60,7 @@ export default {
     //Language Handler
     const bannerContent = {
       en: {
-        header: "Notice from the pâtisserie",
+        header: "Notice from",
         title: "This cookie uses websites!",
         contentList:
           "<p>One crumb.</p> <p>Two crumbs.</p> <p>Three crumbs.</p> <p>Four!</p>",
@@ -70,7 +70,7 @@ export default {
         selection: "Accept Selection",
       },
       de: {
-        header: "Mitteilung von der Konditorei",
+        header: "Mitteilung von",
         title: "Dieser Cookie verwendet Webseiten!",
         contentList:
           "<p>Ein Krümel.</p> <p>Zwei Krümel.</p> <p>Drei Krümel.</p> <p>Vier!</p>",
@@ -80,7 +80,7 @@ export default {
         selection: "Auswahl zulassen",
       },
       fr: {
-        header: "Notification de la pâtisserie",
+        header: "Notification de",
         title: "Ce cookie utilise des sites Web!",
         contentList:
           "<p>Une miette.</p> <p>Deux miettes.</p> <p>Trois miettes.</p> <p>Quatre!</p>",
